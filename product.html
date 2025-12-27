@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Chi tiết dự án: WEBSITE WHITEBOARD</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2547f4",
+                        "background-light": "#f8f9fc",
+                        "background-dark": "#101322",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1a1d2d",
+                        "text-primary-light": "#0d101c",
+                        "text-primary-dark": "#ffffff",
+                        "text-secondary-light": "#49579c",
+                        "text-secondary-dark": "#9ca3af",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark transition-colors duration-200">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+        <header
+            class="sticky top-0 z-50 w-full border-b border-[#e7e9f4] dark:border-gray-800 bg-[#f8f9fc]/90 dark:bg-[#101322]/90 backdrop-blur-md">
+            <div class="mx-auto max-w-[1280px] px-4 sm:px-10 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                            <span class="material-symbols-outlined !text-[24px]">draw</span>
+                        </div>
+                        <div>
+                            <h2
+                                class="text-lg font-bold leading-tight tracking-[-0.015em] text-[#0d101c] dark:text-white">
+                                WebWhiteboard
+                            </h2>
+                            <p
+                                class="text-[10px] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                                Đồ án Nhóm 7
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex flex-1 justify-end gap-8">
+                        <nav class="flex items-center gap-9">
+                            <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+                                href="index.html">Home</a>
+                            <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+                                href="about.html">About</a>
+                            <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+                                href="product.html">Product</a>
+                            <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+                                href="resource.html">Resource</a>
+                        </nav>
+                        <a class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-700 transition-colors text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em]"
+                            href="https://webwhiteboard.com/" target="_blank">
+                            <span class="truncate">Thử công cụ gốc</span>
+                        </a>
+                    </div>
+                    <button class="md:hidden p-2 text-slate-700 dark:text-slate-200">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- VIDEO INTRO -->
+
+        <main class="flex-1">
+
+            <section class="relative w-full py-12 md:py-24 px-6">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="flex flex-col gap-6 max-w-2xl">
+                            <h1
+                                class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">
+                                Sáng tạo không giới hạn với <span class="text-primary">Whiteboard</span>
+                            </h1>
+                            <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Một bảng vẽ kỹ thuật số thông minh, nơi các ý tưởng, nội dung và mọi người gặp gỡ. Tự do
+                                sáng tạo, lên kế hoạch bài giảng và làm việc nhóm trong thời gian thực.
+                            </p>
+
+                        </div>
+                        <div class="w-full relative">
+                            <div
+                                class="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-blue-500/20 rounded-2xl blur-2xl dark:opacity-40">
+                            </div>
+                            <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-2xl bg-white dark:bg-slate-800"
+                                data-alt="Hình ảnh minh họa giao diện Whiteboard với các ghi chú và hình vẽ"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7mwrxOzNBBr7BXHNCqdEvyX_YEs9TCPVnhdlQawmRgNGka-rbBDpXLcnZ9ngbYK_Vii5AfNvuKlORLVanrKyRL85Y1vUG2dj7wEvUOATmOWEhMtIyJ_maU0y_RMrZJ8oW0BaVioY845Am8tYtZoKWNXVXNkT6LZqHyvudIBDYI0CeXQITSQny_2ST7VtST-8hCIKzOZlA9VuCgxPAA_EAPqYmVnZSBg7BqN3x5covUlCYA99DzcHd5rconrk662BqqoZgK7jizLg'); background-size: cover; background-position: center;">
+                                <div
+                                    class="absolute inset-0 bg-slate-900/5 dark:bg-slate-900/40 flex items-center justify-center group cursor-pointer">
+                                    <span class="sr-only">Xem trước tương tác</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 -mt-20 relative z-10">
+                <div
+                    class="bg-card-light dark:bg-card-dark rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-800 mb-8">
+
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div
+                            class="bg-card-light dark:bg-card-dark rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-800">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="p-3 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-primary">
+                                    <span class="material-symbols-outlined">menu_book</span>
+                                </div>
+                                <h2 class="text-2xl font-bold text-text-primary-light dark:text-text-primary-dark">
+                                    Định nghĩa
+                                </h2>
+                            </div>
+                            <p class="text-text-secondary-light dark:text-gray-300 leading-relaxed">
+                                Website Whiteboard là một ứng dụng web mô phỏng bảng trắng
+                                truyền thống, cho phép người dùng viết, vẽ, thêm ghi chú và hình
+                                ảnh trên một không gian kỹ thuật số không giới hạn. Điểm đặc
+                                biệt là khả năng cộng tác thời gian thực, cho phép nhiều người
+                                cùng tương tác trên một bảng cùng lúc từ bất kỳ đâu.
+                            </p>
+                        </div>
+                        <div
+                            class="bg-card-light dark:bg-card-dark rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-800">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div
+                                    class="p-3 rounded-lg bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">
+                                    <span class="material-symbols-outlined">ads_click</span>
+                                </div>
+                                <h2 class="text-2xl font-bold text-text-primary-light dark:text-text-primary-dark">
+                                    Nhằm mục đích gì?
+                                </h2>
+                            </div>
+                            <p class="text-text-secondary-light dark:text-gray-300 leading-relaxed">
+                                Dự án được xây dựng nhằm giải quyết bài toán tương tác trong đào
+                                tạo từ xa và làm việc nhóm trực tuyến. Mục đích chính là cung
+                                cấp một công cụ trực quan, đơn giản nhưng mạnh mẽ để truyền tải
+                                kiến thức, brainstorming ý tưởng và tăng cường sự kết nối giữa
+                                người dạy và người học.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1  gap-6 mb-8">
+
+
+                        <div
+                            class="bg-card-light dark:bg-card-dark rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-800">
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="p-3 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-primary">
+                                    <span class="material-symbols-outlined">video_library</span>
+                                </div>
+                                <h2 class="text-2xl font-bold text-text-primary-light dark:text-text-primary-dark">
+                                    Cách thức hoạt động
+                                </h2>
+
+                            </div>
+                            <p class="text-text-secondary-light dark:text-gray-300 leading-relaxed">
+                                Làm quen với Whiteboard
+                                chỉ trong vài phút. Video hướng dẫn này sẽ giúp bạn nắm bắt công cụ cơ bản.</p>
+                            <video class="w-full object-cover pt-4" src="video.mp4" poster="video-image.png" controls
+                                preload="metadata"></video>
+                        </div>
+
+
+                    </div>
+                    <div
+                        class="bg-card-light dark:bg-card-dark rounded-2xl p-8 shadow-lg border border-gray-100 dark:border-gray-800 mb-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                            <div class="lg:col-span-1">
+                                <h2
+                                    class="text-2xl font-bold text-text-primary-light dark:text-text-primary-dark mb-6 flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-primary">group</span>
+                                    Đối tượng sử dụng
+                                </h2>
+                                <ul class="space-y-4">
+                                    <li class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-green-500">check_circle</span>
+                                        <span class="text-text-secondary-light dark:text-gray-300">Giảng viên &amp; Giáo
+                                            viên</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-green-500">check_circle</span>
+                                        <span class="text-text-secondary-light dark:text-gray-300">Học sinh &amp; Sinh
+                                            viên</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-green-500">check_circle</span>
+                                        <span class="text-text-secondary-light dark:text-gray-300">Nhóm làm việc từ
+                                            xa</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span class="material-symbols-outlined text-green-500">check_circle</span>
+                                        <span class="text-text-secondary-light dark:text-gray-300">Người sáng tạo nội
+                                            dung giáo dục</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="lg:col-span-2 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/5 rounded-xl p-6 border border-primary/10">
+                                <h3 class="text-xl font-bold text-primary mb-4 flex items-center gap-2">
+                                    <span class="material-symbols-outlined">school</span>
+                                    Lý do giảng viên nên dùng?
+                                </h3>
+                                <div class="grid sm:grid-cols-2 gap-6">
+                                    <div class="flex gap-3">
+                                        <div class="mt-1 bg-white dark:bg-card-dark p-1.5 rounded-lg shadow-sm h-fit">
+                                            <span
+                                                class="material-symbols-outlined text-sm text-primary">visibility</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-text-primary-light dark:text-white text-base">
+                                                Trực quan hóa bài giảng
+                                            </h4>
+                                            <p class="text-sm text-text-secondary-light dark:text-gray-400 mt-1">
+                                                Dễ dàng vẽ sơ đồ, viết công thức và minh họa ý tưởng
+                                                ngay lập tức thay vì chỉ nói suông.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="mt-1 bg-white dark:bg-card-dark p-1.5 rounded-lg shadow-sm h-fit">
+                                            <span
+                                                class="material-symbols-outlined text-sm text-primary">diversity_3</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-text-primary-light dark:text-white text-base">
+                                                Tăng tương tác
+                                            </h4>
+                                            <p class="text-sm text-text-secondary-light dark:text-gray-400 mt-1">
+                                                Mời học sinh lên bảng giải bài tập ngay trong giờ học
+                                                online, tạo không khí sôi nổi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="mt-1 bg-white dark:bg-card-dark p-1.5 rounded-lg shadow-sm h-fit">
+                                            <span class="material-symbols-outlined text-sm text-primary">save</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-text-primary-light dark:text-white text-base">
+                                                Lưu trữ dễ dàng
+                                            </h4>
+                                            <p class="text-sm text-text-secondary-light dark:text-gray-400 mt-1">
+                                                Toàn bộ nội dung buổi học được lưu lại tự động và có thể
+                                                chia sẻ lại cho sinh viên vắng mặt.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-3">
+                                        <div class="mt-1 bg-white dark:bg-card-dark p-1.5 rounded-lg shadow-sm h-fit">
+                                            <span class="material-symbols-outlined text-sm text-primary">devices</span>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-text-primary-light dark:text-white text-base">
+                                                Không cần cài đặt
+                                            </h4>
+                                            <p class="text-sm text-text-secondary-light dark:text-gray-400 mt-1">
+                                                Chạy trực tiếp trên trình duyệt, không yêu cầu cấu hình
+                                                máy tính cao hay cài đặt phức tạp.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-10">
+                        <h2
+                            class="text-2xl font-bold text-text-primary-light dark:text-text-primary-dark mb-6 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">touch_app</span>
+                            Cách sử dụng
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                            <div
+                                class="relative bg-white dark:bg-card-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow">
+                                <div
+                                    class="absolute -top-3 -left-3 size-8 bg-primary text-white rounded-lg flex items-center justify-center font-bold shadow-lg">
+                                    1
+                                </div>
+                                <h3 class="mt-2 font-bold text-lg text-text-primary-light dark:text-white">
+                                    Truy cập &amp; Đăng ký
+                                </h3>
+                                <p class="mt-2 text-sm text-text-secondary-light dark:text-gray-400">
+                                    Truy cập website và tạo tài khoản nhanh chóng thông qua Email
+                                    hoặc Google.
+                                </p>
+                            </div>
+                            <div
+                                class="relative bg-white dark:bg-card-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow">
+                                <div
+                                    class="absolute -top-3 -left-3 size-8 bg-primary text-white rounded-lg flex items-center justify-center font-bold shadow-lg">
+                                    2
+                                </div>
+                                <h3 class="mt-2 font-bold text-lg text-text-primary-light dark:text-white">
+                                    Tạo bảng mới
+                                </h3>
+                                <p class="mt-2 text-sm text-text-secondary-light dark:text-gray-400">
+                                    Nhấn nút "New Board" để bắt đầu một không gian làm việc trắng
+                                    tinh khôi.
+                                </p>
+                            </div>
+                            <div
+                                class="relative bg-white dark:bg-card-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow">
+                                <div
+                                    class="absolute -top-3 -left-3 size-8 bg-primary text-white rounded-lg flex items-center justify-center font-bold shadow-lg">
+                                    3
+                                </div>
+                                <h3 class="mt-2 font-bold text-lg text-text-primary-light dark:text-white">
+                                    Sử dụng công cụ
+                                </h3>
+                                <p class="mt-2 text-sm text-text-secondary-light dark:text-gray-400">
+                                    Sử dụng thanh công cụ bên trái để vẽ, viết văn bản, dán ghi
+                                    chú hoặc chèn hình ảnh.
+                                </p>
+                            </div>
+                            <div
+                                class="relative bg-white dark:bg-card-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow">
+                                <div
+                                    class="absolute -top-3 -left-3 size-8 bg-primary text-white rounded-lg flex items-center justify-center font-bold shadow-lg">
+                                    4
+                                </div>
+                                <h3 class="mt-2 font-bold text-lg text-text-primary-light dark:text-white">
+                                    Chia sẻ &amp; Cộng tác
+                                </h3>
+                                <p class="mt-2 text-sm text-text-secondary-light dark:text-gray-400">
+                                    Gửi link cho học viên/đồng nghiệp để họ cùng tham gia vào bảng
+                                    vẽ của bạn.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+                        <div
+                            class="bg-emerald-50/50 dark:bg-emerald-900/10 rounded-2xl p-6 border border-emerald-100 dark:border-emerald-900/30">
+                            <h3
+                                class="text-xl font-bold text-emerald-700 dark:text-emerald-400 mb-4 flex items-center gap-2">
+                                <span class="material-symbols-outlined">thumb_up</span>
+                                Ưu điểm
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-emerald-900 dark:text-emerald-200 text-sm">
+                                    <span class="material-symbols-outlined text-[18px] mt-0.5">check</span>
+                                    Giao diện trực quan, dễ làm quen ngay cả với người không rành
+                                    công nghệ.
+                                </li>
+                                <li class="flex items-start gap-3 text-emerald-900 dark:text-emerald-200 text-sm">
+                                    <span class="material-symbols-outlined text-[18px] mt-0.5">check</span>
+                                    Tốc độ đồng bộ hóa dữ liệu nhanh, độ trễ thấp (low latency).
+                                </li>
+                                <li class="flex items-start gap-3 text-emerald-900 dark:text-emerald-200 text-sm">
+                                    <span class="material-symbols-outlined text-[18px] mt-0.5">check</span>
+                                    Hỗ trợ đa nền tảng: PC, Laptop, Tablet và Mobile.
+                                </li>
+                                <li class="flex items-start gap-3 text-emerald-900 dark:text-emerald-200 text-sm">
+                                    <span class="material-symbols-outlined text-[18px] mt-0.5">check</span>
+                                    Tích hợp sẵn kho thư viện icon và template giáo dục phong phú.
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="bg-rose-50/50 dark:bg-rose-900/10 rounded-2xl p-6 border border-rose-100 dark:border-rose-900/30">
+                            <h3 class="text-xl font-bold text-rose-700 dark:text-rose-400 mb-4 flex items-center gap-2">
+                                <span class="material-symbols-outlined">thumb_down</span>
+                                Nhược điểm
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-rose-900 dark:text-rose-200 text-sm">
+                                    <span class="material-symbols-outlined text-[18px] mt-0.5">close</span>
+                                    Yêu cầu kết nối Internet ổn định để sử dụng tính năng thời
+                                    gian thực.
+                                </li>
+                                <li class="flex items-start gap-3 text-rose-900 dark:text-rose-200 text-sm">
+                                    <span class="material-symbols-outlined text-[18px] mt-0.5">close</span>
+                                    Chưa hỗ trợ các tính năng vẽ kỹ thuật cao cấp như các phần mềm
+                                    chuyên dụng (AutoCAD, AI).
+                                </li>
+                                <li class="flex items-start gap-3 text-rose-900 dark:text-rose-200 text-sm">
+                                    <span class="material-symbols-outlined text-[18px] mt-0.5">close</span>
+                                    Giới hạn dung lượng lưu trữ đối với tài khoản miễn phí.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div
+                            class="bg-card-light dark:bg-card-dark rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-800">
+                            <h2
+                                class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark mb-6 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-orange-500">compare_arrows</span>
+                                Những ứng dụng tương tự
+                            </h2>
+                            <div class="flex flex-col gap-4">
+
+                                <a href="https://www.microsoft.com/vi-vn/microsoft-365/microsoft-whiteboard/digital-whiteboard-app"
+                                    class="flex items-center gap-4 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors cursor-default">
+                                    <div
+                                        class="size-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-xs shrink-0">
+                                        Ms
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-text-primary-light dark:text-white">
+                                            Microsoft Whiteboard
+                                        </h4>
+                                        <p class="text-xs text-text-secondary-light dark:text-gray-400">
+                                            Tích hợp sâu trong hệ sinh thái Office 365 và Teams.
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="https://www.mural.co/"
+                                    class="flex items-center gap-4 p-3 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors cursor-default">
+                                    <div
+                                        class="size-10 rounded-full bg-pink-500 flex items-center justify-center text-white font-bold text-xs shrink-0">
+                                        Mu
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-text-primary-light dark:text-white">
+                                            Mural
+                                        </h4>
+                                        <p class="text-xs text-text-secondary-light dark:text-gray-400">
+                                            Tập trung vào các workshop và design thinking chuyên
+                                            nghiệp.
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-card-light dark:bg-card-dark rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-800">
+                            <h2
+                                class="text-xl font-bold text-text-primary-light dark:text-text-primary-dark mb-6 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-blue-500">link</span>
+                                Website giáo dục khác
+                            </h2>
+                            <div class="grid grid-cols-2 gap-4">
+                                <a class="block p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors border border-transparent hover:border-blue-200 dark:hover:border-blue-800 group"
+                                    href="https://classroom.google.com">
+                                    <h4
+                                        class="font-bold text-text-primary-light dark:text-white group-hover:text-primary transition-colors">
+                                        Google Classroom
+                                    </h4>
+                                    <p class="text-xs text-text-secondary-light dark:text-gray-400 mt-1">
+                                        Quản lý lớp học
+                                    </p>
+                                </a>
+                                <a class="block p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors border border-transparent hover:border-purple-200 dark:hover:border-purple-800 group"
+                                    href="https://kahoot.it/">
+                                    <h4
+                                        class="font-bold text-text-primary-light dark:text-white group-hover:text-purple-500 transition-colors">
+                                        Kahoot!
+                                    </h4>
+                                    <p class="text-xs text-text-secondary-light dark:text-gray-400 mt-1">
+                                        Trò chơi học tập
+                                    </p>
+                                </a>
+                                <a class="block p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors border border-transparent hover:border-green-200 dark:hover:border-green-800 group"
+                                    href="https://quizlet.com/vn">
+                                    <h4
+                                        class="font-bold text-text-primary-light dark:text-white group-hover:text-green-500 transition-colors">
+                                        Quizlet
+                                    </h4>
+                                    <p class="text-xs text-text-secondary-light dark:text-gray-400 mt-1">
+                                        Thẻ ghi nhớ (Flashcard)
+                                    </p>
+                                </a>
+                                <a class="block p-4 rounded-xl bg-gray-50 dark:bg-gray-800/50 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors border border-transparent hover:border-indigo-200 dark:hover:border-indigo-800 group"
+                                    href="https://www.zoom.com/">
+                                    <h4
+                                        class="font-bold text-text-primary-light dark:text-white group-hover:text-indigo-500 transition-colors">
+                                        Zoom
+                                    </h4>
+                                    <p class="text-xs text-text-secondary-light dark:text-gray-400 mt-1">
+                                        Hội thoại trực tuyến
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="w-full py-20 border-t border-slate-200 dark:border-slate-800" id="submit-review">
+                    <div class="mx-auto max-w-[960px] px-4 sm:px-10">
+                        <div class="mx-auto max-w-2xl">
+                            <div class="mb-10 text-center">
+                                <h2
+                                    class="text-3xl font-black tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+                                    Đánh giá
+                                </h2>
+                                <p class="mt-4 text-lg text-slate-600 dark:text-slate-300">
+                                    Hãy gửi đánh giá của bạn để giúp chúng tôi hoàn thiện tốt hơn
+                                </p>
+                            </div>
+                            <div
+                                class="rounded-2xl bg-white dark:bg-surface-dark p-6 sm:p-10 shadow-xl border border-slate-200 dark:border-slate-800">
+                                <form id="reviewForm" class="flex flex-col gap-6" onsubmit="handleSubmit(event)">
+
+                                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                                        <div class="flex flex-col gap-2">
+                                            <label class="font-bold text-slate-900 dark:text-white"
+                                                for="name">Tên</label>
+                                            <input
+                                                class="rounded-lg border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800 dark:text-white transition-all outline-none border"
+                                                id="name" placeholder="John Doe" type="text" />
+                                        </div>
+                                        <div class="flex flex-col gap-2">
+                                            <label class="font-bold text-slate-900 dark:text-white"
+                                                for="email">Email</label>
+                                            <input
+                                                class="rounded-lg border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800 dark:text-white transition-all outline-none border"
+                                                id="email" placeholder="john@example.com" type="email" />
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <label class="font-bold text-slate-900 dark:text-white" for="message">Ý
+                                            kiến</label>
+                                        <textarea
+                                            class="resize-none rounded-lg border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800 dark:text-white transition-all outline-none border"
+                                            id="message" placeholder="Những điều bạn thích hoặc chưa thích?"
+                                            rows="4"></textarea>
+                                    </div>
+                                    <button
+                                        class="mt-2 inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-base font-bold text-white shadow-lg shadow-blue-500/20 transition-all hover:bg-blue-700 hover:-translate-y-1"
+                                        type="submit">
+                                        Gửi
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </main>
+        <footer class="bg-white dark:bg-card-dark border-t border-gray-200 dark:border-gray-800 py-10">
+            <div class="mx-auto max-w-[1280px] px-4 sm:px-10">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+                    <div class="max-w-xs">
+                        <div class="flex items-center gap-2 mb-4 text-[#0d101c] dark:text-white">
+                            <span class="material-symbols-outlined">draw</span>
+                            <span class="font-bold text-lg">WebWhiteboard</span>
+                        </div>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            Đây là website phục vụ cho mục đích học tập và báo cáo đồ án môn
+                            học. Không phải trang web chính thức của sản phẩm.
+                        </p>
+                    </div>
+                    <div class="flex gap-16 flex-wrap">
+                        <div>
+                            <h4 class="font-bold text-[#0d101c] dark:text-white mb-4">
+                                Điều hướng
+                            </h4>
+                            <ul class="space-y-2 text-sm text-slate-500">
+                                <li><a class="hover:text-primary" href="#">Home</a></li>
+                                <li>
+                                    <a class="hover:text-primary" href="about.html">About</a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primary" href="product.html">Product</a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-primary" href="resource.html">Resource</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#0d101c] dark:text-white mb-4">
+                                Liên kết
+                            </h4>
+                            <ul class="space-y-2 text-sm text-slate-500">
+                                <li>
+                                    <a class="hover:text-primary" href="https://webwhiteboard.com/"
+                                        target="_blank">Trang chủ sản phẩm</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <p class="text-xs text-slate-400">
+                        © 2025 Nhóm 7 - Lớp Nghiệp Vụ Giảng Dạy Cho Giảng Viên - K04. All
+                        rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            // (Nếu sau này có call API thì đặt ở đây)
+
+            // Show popup
+            document.getElementById("successModal").classList.remove("hidden");
+            document.getElementById("successModal").classList.add("flex");
+
+            // Clear form
+            document.getElementById("reviewForm").reset();
+        }
+
+        function closeModal() {
+            document.getElementById("successModal").classList.add("hidden");
+            document.getElementById("successModal").classList.remove("flex");
+        }
+    </script>
+</body>
+<!-- SUCCESS POPUP -->
+<div id="successModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50">
+    <div class="bg-white dark:bg-card-dark rounded-2xl p-8 max-w-sm w-full text-center shadow-2xl">
+        <span class="material-symbols-outlined text-green-500 text-5xl mb-4">
+            check_circle
+        </span>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">
+            Gửi thành công 🎉
+        </h3>
+        <p class="text-slate-600 dark:text-slate-400 mb-6">
+            Cảm ơn bạn đã gửi đánh giá cho chúng tôi
+        </p>
+        <button onclick="closeModal()"
+            class="rounded-lg bg-primary px-6 py-3 text-white font-bold hover:bg-blue-700 transition">
+            Đóng
+        </button>
+    </div>
+</div>
+
+</html>
