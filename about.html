@@ -1,553 +1,446 @@
 <!DOCTYPE html>
 <html class="light" lang="vi">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Giới thiệu về nhóm - WebWhiteboard</title>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#2547f4",
-              "background-light": "#f5f6f8",
-              "background-dark": "#101322",
-            },
-            fontFamily: {
-              display: ["Inter", "sans-serif"],
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Giới thiệu về nhóm - WebWhiteboard</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2547f4",
+            "background-light": "#f5f6f8",
+            "background-dark": "#101322",
+          },
+          fontFamily: {
+            display: ["Inter", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px",
           },
         },
-      };
-    </script>
-  </head>
-  <body
-    class="bg-background-light dark:bg-background-dark font-display text-[#0d101c] dark:text-white overflow-x-hidden"
-  >
-     <header
-        class="sticky top-0 z-50 w-full border-b border-[#e7e9f4] dark:border-gray-800 bg-[#f8f9fc]/90 dark:bg-[#101322]/90 backdrop-blur-md"
-      >
-        <div class="mx-auto max-w-[1280px] px-4 sm:px-10 py-3">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center gap-4">
-              <div
-                class="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary"
-              >
-                <span class="material-symbols-outlined !text-[24px]">draw</span>
-              </div>
-              <div>
-                <h2
-                  class="text-lg font-bold leading-tight tracking-[-0.015em] text-[#0d101c] dark:text-white"
-                >
-                  WebWhiteboard
-                </h2>
-                <p
-                  class="text-[10px] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400"
-                >
-                  Đồ án Nhóm 7
-                </p>
-              </div>
-            </div>
-            <div class="hidden md:flex flex-1 justify-end gap-8">
-              <nav class="flex items-center gap-9">
-                <a
-                  class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
-                  href="index.html"
-                  >Home</a
-                >
-                <a
-                  class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
-                  href="about.html"
-                  >About</a
-                >
-                <a
-                  class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
-                  href="product.html"
-                  >Product</a
-                >
-                <a
-                  class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
-                  href="resource.html"
-                  >Resource</a
-                >
-              </nav>
-              <a
-                class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-700 transition-colors text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em]"
-                href="https://webwhiteboard.com/"
-                target="_blank"
-              >
-                <span class="truncate">Thử công cụ gốc</span>
-              </a>
-            </div>
-            <button class="md:hidden p-2 text-slate-700 dark:text-slate-200">
-              <span class="material-symbols-outlined">menu</span>
-            </button>
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0d101c] dark:text-white overflow-x-hidden">
+  <header
+    class="sticky top-0 z-50 w-full border-b border-[#e7e9f4] dark:border-gray-800 bg-[#f8f9fc]/90 dark:bg-[#101322]/90 backdrop-blur-md">
+    <div class="mx-auto max-w-[1280px] px-4 sm:px-10 py-3">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <div class="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+            <span class="material-symbols-outlined !text-[24px]">draw</span>
+          </div>
+          <div>
+            <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-[#0d101c] dark:text-white">
+              WebWhiteboard
+            </h2>
+            <p class="text-[10px] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
+              Đồ án Nhóm 7
+            </p>
           </div>
         </div>
-      </header>
-    <main class="flex flex-col w-full items-center">
-      <section class="w-full max-w-7xl px-4 md:px-10 py-12 md:py-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div class="flex flex-col gap-6 order-2 md:order-1">
-            <div class="flex flex-col gap-4 text-left">
-              <h1
-                class="text-3xl md:text-5xl lg:text-5xl font-black leading-[1.1] tracking-tight text-[#0d101c] dark:text-white"
-              >
-                Đội Ngũ Đằng Sau <br class="hidden lg:block" />
-                Website Giới Thiệu <br class="hidden lg:block" />
-                <span class="text-primary">WebWhiteboard.com</span>
-              </h1>
-              <div
-                class="text-lg text-gray-600 dark:text-gray-300 max-w-lg leading-relaxed space-y-4"
-              >
-                <p>
-                  Xin chào! Chúng tôi là nhóm sinh viên thực hiện đồ án nghiên
-                  cứu và phát triển website giới thiệu về công cụ
-                  <strong>WebWhiteboard</strong>.
-                </p>
-                <p>
-                  Với niềm đam mê công nghệ và mong muốn tìm kiếm những giải
-                  pháp cộng tác hiệu quả, nhóm đã tập trung phân tích các tính
-                  năng nổi bật, trải nghiệm người dùng và tiềm năng ứng dụng của
-                  bảng trắng kỹ thuật số này trong môi trường học tập và làm
-                  việc từ xa.
-                </p>
-              </div>
-            </div>
-            <div class="flex gap-4 pt-2">
-              <a
-                class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
-                href="#team-members"
-              >
-                Xem thành viên
-              </a>
-             
+        <div class="hidden md:flex flex-1 justify-end gap-8">
+          <nav class="flex items-center gap-9">
+            <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+              href="index.html">Home</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+              href="about.html">About</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+              href="product.html">Product</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+              href="resource.html">Resource</a>
+          </nav>
+          <a class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-700 transition-colors text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em]"
+            href="https://webwhiteboard.com/" target="_blank">
+            <span class="truncate">Thử công cụ gốc</span>
+          </a>
+        </div>
+        <button class="md:hidden p-2 text-slate-700 dark:text-slate-200" onclick="toggleMenu()">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div id="mobileMenu"
+    class="hidden md:hidden border-b border-[#e7e9f4] dark:border-gray-800 bg-[#f8f9fc] dark:bg-[#101322]">
+    <nav class="flex flex-col gap-4 px-6 py-6">
+      <a href="index.html" class="font-medium">Home</a>
+      <a href="about.html" class="font-medium">About</a>
+      <a href="product.html" class="font-medium">Product</a>
+      <a href="resource.html" class="font-medium">Resource</a>
+
+      <a href="https://webwhiteboard.com/" target="_blank"
+        class="mt-4 inline-flex justify-center rounded-lg bg-primary px-6 py-3 text-white font-bold">
+        Thử công cụ gốc
+      </a>
+    </nav>
+  </div>
+  <main class="flex flex-col w-full items-center">
+    <section class="w-full max-w-7xl px-4 md:px-10 py-12 md:py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="flex flex-col gap-6 order-2 md:order-1">
+          <div class="flex flex-col gap-4 text-left">
+            <h1
+              class="text-3xl md:text-5xl lg:text-5xl font-black leading-[1.1] tracking-tight text-[#0d101c] dark:text-white">
+              Đội Ngũ Đằng Sau <br class="hidden lg:block" />
+              Website Giới Thiệu <br class="hidden lg:block" />
+              <span class="text-primary">WebWhiteboard.com</span>
+            </h1>
+            <div class="text-lg text-gray-600 dark:text-gray-300 max-w-lg leading-relaxed space-y-4">
+              <p>
+                Xin chào! Chúng tôi là nhóm sinh viên thực hiện đồ án nghiên
+                cứu và phát triển website giới thiệu về công cụ
+                <strong>WebWhiteboard</strong>.
+              </p>
+              <p>
+                Với niềm đam mê công nghệ và mong muốn tìm kiếm những giải
+                pháp cộng tác hiệu quả, nhóm đã tập trung phân tích các tính
+                năng nổi bật, trải nghiệm người dùng và tiềm năng ứng dụng của
+                bảng trắng kỹ thuật số này trong môi trường học tập và làm
+                việc từ xa.
+              </p>
             </div>
           </div>
-          <div class="order-1 md:order-2 relative group">
-            <div
-              class="absolute -inset-1 bg-gradient-to-r from-primary to-blue-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"
-            ></div>
-            <div
-              class="relative w-full aspect-video bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700"
-              data-alt="Looping video of team members collaborating on a digital whiteboard, drawing diagrams and sticky notes"
-              style="
+          <div class="flex gap-4 pt-2">
+            <a class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
+              href="#team-members">
+              Xem thành viên
+            </a>
+
+          </div>
+        </div>
+        <div class="order-1 md:order-2 relative group">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-primary to-blue-400 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200">
+          </div>
+          <div
+            class="relative w-full aspect-video bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700"
+            data-alt="Looping video of team members collaborating on a digital whiteboard, drawing diagrams and sticky notes"
+            style="
                 background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDX88Siggq9uSHOWMobQegUq-PtI2dAz9pea_w2r9vsjsU9wqeOvcswUxHrwqdTBs5PteHiMx2vt0fchcKlaYxOrX_tZ8A91aca8985vbjXyKvNALIgBpZfKdh_JF4oFTI7pr_b0J9OYub0kzhltkOhwj46VrDRNog4cGxq3ckquccDFLBTuq7CVO69vd3qo1gvnjHcYHi2IY5EtZ9m0BGJwPVD7kK2EOjq5CUs1wq3Rk07TtW0DyaDD2miZ9S1eJnC9oQpzZkpRO8');
                 background-size: cover;
                 background-position: center;
-              "
-            >
-              <div
-                class="absolute inset-0 bg-black/10 flex items-center justify-center group-hover:bg-black/20 transition-colors"
-              >
-             
-              </div>
+              ">
+            <div
+              class="absolute inset-0 bg-black/10 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+
             </div>
-           
           </div>
+
         </div>
-      </section>
-      <section
-        class="w-full bg-white dark:bg-gray-900 border-y border-gray-100 dark:border-gray-800"
-      >
-        <div class="max-w-4xl mx-auto px-4 py-16 text-center">
-          <span class="material-symbols-outlined text-5xl text-primary mb-6"
-            >visibility</span
-          >
-          <h2 class="text-3xl font-bold leading-tight mb-6">Mục Tiêu Đồ Án</h2>
-          <p
-            class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed font-light"
-          >
-            "Chúng tôi mong muốn tạo
-            ra một không gian thông tin hữu ích, giúp người dùng mới dễ dàng
-            tiếp cận và khai thác sức mạnh của
-            <span class="text-primary font-semibold">WebWhiteboard</span> cho
-            công việc hàng ngày."
+      </div>
+    </section>
+    <section class="w-full bg-white dark:bg-gray-900 border-y border-gray-100 dark:border-gray-800">
+      <div class="max-w-4xl mx-auto px-4 py-16 text-center">
+        <span class="material-symbols-outlined text-5xl text-primary mb-6">visibility</span>
+        <h2 class="text-3xl font-bold leading-tight mb-6">Mục Tiêu Đồ Án</h2>
+        <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed font-light">
+          "Chúng tôi mong muốn tạo
+          ra một không gian thông tin hữu ích, giúp người dùng mới dễ dàng
+          tiếp cận và khai thác sức mạnh của
+          <span class="text-primary font-semibold">WebWhiteboard</span> cho
+          công việc hàng ngày."
+        </p>
+      </div>
+    </section>
+    <section class="w-full bg-background-light dark:bg-background-dark py-16" id="team-members">
+      <div class="max-w-7xl mx-auto px-4 md:px-10">
+        <div class="text-center mb-16">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900 text-primary w-fit mb-4">
+            <span class="material-symbols-outlined text-sm">badge</span>
+            <span class="text-xs font-bold uppercase tracking-wider">Thành viên</span>
+          </div>
+          <h2 class="text-4xl font-black mb-4 text-[#0d101c] dark:text-white">
+            Danh Sách Thành Viên
+          </h2>
+          <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg">
+            Tám mảnh ghép cá tính cùng chung tay xây dựng và hoàn thiện dự
+            án.
           </p>
         </div>
-      </section>
-      <section
-        class="w-full bg-background-light dark:bg-background-dark py-16"
-        id="team-members"
-      >
-        <div class="max-w-7xl mx-auto px-4 md:px-10">
-          <div class="text-center mb-16">
-            <div
-              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900 text-primary w-fit mb-4"
-            >
-              <span class="material-symbols-outlined text-sm">badge</span>
-              <span class="text-xs font-bold uppercase tracking-wider"
-                >Thành viên</span
-              >
-            </div>
-            <h2 class="text-4xl font-black mb-4 text-[#0d101c] dark:text-white">
-              Danh Sách Thành Viên
-            </h2>
-            <p
-              class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg"
-            >
-              Tám mảnh ghép cá tính cùng chung tay xây dựng và hoàn thiện dự
-              án.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div
-              class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1"
-            >
-              <div class="flex items-start justify-between mb-4">
-                <div
-                  class="w-14 h-14 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary border border-blue-100 dark:border-blue-800"
-                >
-                  <span class="material-symbols-outlined text-2xl">person</span>
-                </div>
-                <span class="text-xs font-bold text-gray-400">#01</span>
-              </div>
-              <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
-                Phan Đức Phương
-              </h3>
-              <div class="space-y-2">
-                <p
-                  class="text-sm font-semibold text-primary uppercase tracking-wider text-xs"
-                >
-                  Giới thiệu
-                </p>
-                <p class="text-gray-600 dark:text-gray-300 leading-snug">
-                  Đam mê lập trình web, tìm hiểu về công nghệ và thích đi giao lưu với bạn bè.
-                </p>
-              </div>
-            </div>
-            <div
-              class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1"
-            >
-              <div class="flex items-start justify-between mb-4">
-                <div
-                  class="w-14 h-14 rounded-full bg-purple-50 dark:bg-purple-900/20 flex items-center justify-center text-purple-600 border border-purple-100 dark:border-purple-800"
-                >
-                  <span class="material-symbols-outlined text-2xl"
-                    >person_3</span
-                  >
-                </div>
-                <span class="text-xs font-bold text-gray-400">#02</span>
-              </div>
-              <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
-                Trương Bạch Ý Nhi
-              </h3>
-              <div class="space-y-2">
-                <p
-                  class="text-sm font-semibold text-primary uppercase tracking-wider text-xs"
-                >
-                  Giới thiệu
-                </p>
-                <p class="text-gray-600 dark:text-gray-300 leading-snug">
-                  Dạy tiếng anh, thích ăn bánh ngọt.
-                </p>
-              </div>
-            </div>
-            <div
-              class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1"
-            >
-              <div class="flex items-start justify-between mb-4">
-                <div
-                  class="w-14 h-14 rounded-full bg-green-50 dark:bg-green-900/20 flex items-center justify-center text-green-600 border border-green-100 dark:border-green-800"
-                >
-                  <span class="material-symbols-outlined text-2xl">person</span>
-                </div>
-                <span class="text-xs font-bold text-gray-400">#03</span>
-              </div>
-              <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
-                Đinh Thị Thúy Hằng
-              </h3>
-              <div class="space-y-2">
-                <p
-                  class="text-sm font-semibold text-primary uppercase tracking-wider text-xs"
-                >
-                  Giới thiệu
-                </p>
-                <p class="text-gray-600 dark:text-gray-300 leading-snug">
-                  Làm Rạp chiếu phim, thích đi xem phim
-                </p>
-              </div>
-            </div>
-            <div
-              class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1"
-            >
-              <div class="flex items-start justify-between mb-4">
-                <div
-                  class="w-14 h-14 rounded-full bg-orange-50 dark:bg-orange-900/20 flex items-center justify-center text-orange-600 border border-orange-100 dark:border-orange-800"
-                >
-                  <span class="material-symbols-outlined text-2xl"
-                    >person_4</span
-                  >
-                </div>
-                <span class="text-xs font-bold text-gray-400">#04</span>
-              </div>
-              <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
-                Nguyễn Hoàng Minh
-              </h3>
-              <div class="space-y-2">
-                <p
-                  class="text-sm font-semibold text-primary uppercase tracking-wider text-xs"
-                >
-                  Giới thiệu
-                </p>
-                <p class="text-gray-600 dark:text-gray-300 leading-snug">
-                  Chuyên môn QLDA, thích du lịch khám phá.
-                </p>
-              </div>
-            </div>
-            <div
-              class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1"
-            >
-              <div class="flex items-start justify-between mb-4">
-                <div
-                  class="w-14 h-14 rounded-full bg-red-50 dark:bg-red-900/20 flex items-center justify-center text-red-600 border border-red-100 dark:border-red-800"
-                >
-                  <span class="material-symbols-outlined text-2xl">person</span>
-                </div>
-                <span class="text-xs font-bold text-gray-400">#05</span>
-              </div>
-              <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
-                Nguyễn Hữu Thọ
-              </h3>
-              <div class="space-y-2">
-                <p
-                  class="text-sm font-semibold text-primary uppercase tracking-wider text-xs"
-                >
-                  Giới thiệu
-                </p>
-                <p class="text-gray-600 dark:text-gray-300 leading-snug">
-                  Chuyên môn thiết kế công trình XD, thích ca hát và chơi nhạc cụ.
-                </p>
-              </div>
-            </div>
-            <div
-              class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1"
-            >
-              <div class="flex items-start justify-between mb-4">
-                <div
-                  class="w-14 h-14 rounded-full bg-pink-50 dark:bg-pink-900/20 flex items-center justify-center text-pink-600 border border-pink-100 dark:border-pink-800"
-                >
-                  <span class="material-symbols-outlined text-2xl"
-                    >person_2</span
-                  >
-                </div>
-                <span class="text-xs font-bold text-gray-400">#06</span>
-              </div>
-              <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
-                Nguyễn Đình Hiệp
-              </h3>
-              <div class="space-y-2">
-                <p
-                  class="text-sm font-semibold text-primary uppercase tracking-wider text-xs"
-                >
-                  Giới thiệu
-                </p>
-                <p class="text-gray-600 dark:text-gray-300 leading-snug">
-                  Thẩm Phán xét xử các vụ án, thích đi ngao du bốn phương.
-                </p>
-              </div>
-            </div>
-            <div
-              class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1"
-            >
-              <div class="flex items-start justify-between mb-4">
-                <div
-                  class="w-14 h-14 rounded-full bg-teal-50 dark:bg-teal-900/20 flex items-center justify-center text-teal-600 border border-teal-100 dark:border-teal-800"
-                >
-                  <span class="material-symbols-outlined text-2xl">person</span>
-                </div>
-                <span class="text-xs font-bold text-gray-400">#07</span>
-              </div>
-              <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
-                Ngô Kim Phụng
-              </h3>
-              <div class="space-y-2">
-                <p
-                  class="text-sm font-semibold text-primary uppercase tracking-wider text-xs"
-                >
-                  Giới thiệu
-                </p>
-                <p class="text-gray-600 dark:text-gray-300 leading-snug">
-                  Thích nũng nịu, không ai tin.
-                </p>
-              </div>
-            </div>
-            <div
-              class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1"
-            >
-              <div class="flex items-start justify-between mb-4">
-                <div
-                  class="w-14 h-14 rounded-full bg-indigo-50 dark:bg-indigo-900/20 flex items-center justify-center text-indigo-600 border border-indigo-100 dark:border-indigo-800"
-                >
-                  <span class="material-symbols-outlined text-2xl"
-                    >person_3</span
-                  >
-                </div>
-                <span class="text-xs font-bold text-gray-400">#08</span>
-              </div>
-              <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
-                Trần Thị Hồng Nhung
-              </h3>
-              <div class="space-y-2">
-                <p
-                  class="text-sm font-semibold text-primary uppercase tracking-wider text-xs"
-                >
-                  Giới thiệu
-                </p>
-                <p class="text-gray-600 dark:text-gray-300 leading-snug">
-                  Tư vấn hướng nghiệp, thích ăn bánh mì, uống latte.
-                </p>
-              </div>
-            </div>
-           
-          </div>
-        </div>
-      </section>
-      <section
-        class="w-full max-w-7xl px-4 md:px-10 py-16 md:py-24 border-t border-gray-100 dark:border-gray-800"
-      >
-        <div class="flex flex-col md:flex-row gap-12 items-start">
-          <div class="flex-1 space-y-6 sticky top-24">
-            <h2
-              class="text-3xl md:text-4xl font-black tracking-tight text-[#0d101c] dark:text-white"
-            >
-              Lý do nhóm chọn WebWhiteboard
-            </h2>
-            <p class="text-lg text-gray-600 dark:text-gray-300">
-              Trong quá trình tìm kiếm công cụ hỗ trợ làm việc nhóm cho đồ án,
-              chúng tôi đã bị thuyết phục bởi sự tối giản và hiệu quả của
-              WebWhiteboard.
-            </p>
-            <ul class="space-y-4 mt-4">
-              <li class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-primary mt-1"
-                  >check_circle</span
-                >
-                <span class="text-gray-700 dark:text-gray-200"
-                  >Phù hợp cho các buổi họp nhanh (Brainstorming).</span
-                >
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-primary mt-1"
-                  >check_circle</span
-                >
-                <span class="text-gray-700 dark:text-gray-200"
-                  >Không yêu cầu cài đặt, dễ dàng tiếp cận.</span
-                >
-              </li>
-              <li class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-primary mt-1"
-                  >check_circle</span
-                >
-                <span class="text-gray-700 dark:text-gray-200"
-                  >Trải nghiệm viết vẽ trực quan.</span
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="flex-[1.5] grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div
-              class="group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md"
-            >
-              <div
-                class="w-12 h-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform"
-              >
-                <span class="material-symbols-outlined">bolt</span>
-              </div>
-              <h3 class="text-lg font-bold mb-2">Tốc độ</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                Khởi tạo nhanh chóng, giúp nhóm tiết kiệm thời gian thiết lập
-                buổi họp.
-              </p>
-            </div>
-            <div
-              class="group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md"
-            >
-              <div
-                class="w-12 h-12 rounded-lg bg-green-50 dark:bg-green-900/30 flex items-center justify-center mb-4 text-green-600 group-hover:scale-110 transition-transform"
-              >
-                <span class="material-symbols-outlined">sync</span>
-              </div>
-              <h3 class="text-lg font-bold mb-2">Đồng bộ</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                Giúp mọi thành viên đều nắm bắt ý tưởng cùng một lúc dù ở bất cứ
-                đâu.
-              </p>
-            </div>
-            <div
-              class="group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md"
-            >
-              <div
-                class="w-12 h-12 rounded-lg bg-purple-50 dark:bg-purple-900/30 flex items-center justify-center mb-4 text-purple-600 group-hover:scale-110 transition-transform"
-              >
-                <span class="material-symbols-outlined">gesture</span>
-              </div>
-              <h3 class="text-lg font-bold mb-2">Trực quan</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                Giao diện thân thiện, dễ sử dụng ngay cả với những người không
-                rành công nghệ.
-              </p>
-            </div>
-            <div
-              class="group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md"
-            >
-              <div
-                class="w-12 h-12 rounded-lg bg-orange-50 dark:bg-orange-900/30 flex items-center justify-center mb-4 text-orange-600 group-hover:scale-110 transition-transform"
-              >
-                <span class="material-symbols-outlined">devices</span>
-              </div>
-              <h3 class="text-lg font-bold mb-2">Linh hoạt</h3>
-              <p class="text-sm text-gray-500 dark:text-gray-400">
-                Hoạt động tốt trên nhiều thiết bị, hỗ trợ tối đa cho việc học
-                tập di động.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="w-full px-4 md:px-10 py-16">
-        <div
-          class="max-w-5xl mx-auto bg-gradient-to-r from-primary to-blue-700 rounded-2xl overflow-hidden shadow-2xl relative"
-        >
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div
-            class="absolute inset-0 opacity-10"
-            style="
+            class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <div
+                class="w-14 h-14 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-primary border border-blue-100 dark:border-blue-800">
+                <span class="material-symbols-outlined text-2xl">person</span>
+              </div>
+              <span class="text-xs font-bold text-gray-400">#01</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
+              Phan Đức Phương
+            </h3>
+            <div class="space-y-2">
+              <p class="text-sm font-semibold text-primary uppercase tracking-wider text-xs">
+                Giới thiệu
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 leading-snug">
+                Đam mê lập trình web, tìm hiểu về công nghệ và thích đi giao lưu với bạn bè.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <div
+                class="w-14 h-14 rounded-full bg-purple-50 dark:bg-purple-900/20 flex items-center justify-center text-purple-600 border border-purple-100 dark:border-purple-800">
+                <span class="material-symbols-outlined text-2xl">person_3</span>
+              </div>
+              <span class="text-xs font-bold text-gray-400">#02</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
+              Trương Bạch Ý Nhi
+            </h3>
+            <div class="space-y-2">
+              <p class="text-sm font-semibold text-primary uppercase tracking-wider text-xs">
+                Giới thiệu
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 leading-snug">
+                Dạy tiếng anh, thích ăn bánh ngọt.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <div
+                class="w-14 h-14 rounded-full bg-green-50 dark:bg-green-900/20 flex items-center justify-center text-green-600 border border-green-100 dark:border-green-800">
+                <span class="material-symbols-outlined text-2xl">person</span>
+              </div>
+              <span class="text-xs font-bold text-gray-400">#03</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
+              Đinh Thị Thúy Hằng
+            </h3>
+            <div class="space-y-2">
+              <p class="text-sm font-semibold text-primary uppercase tracking-wider text-xs">
+                Giới thiệu
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 leading-snug">
+                Làm Rạp chiếu phim, thích đi xem phim
+              </p>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <div
+                class="w-14 h-14 rounded-full bg-orange-50 dark:bg-orange-900/20 flex items-center justify-center text-orange-600 border border-orange-100 dark:border-orange-800">
+                <span class="material-symbols-outlined text-2xl">person_4</span>
+              </div>
+              <span class="text-xs font-bold text-gray-400">#04</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
+              Nguyễn Hoàng Minh
+            </h3>
+            <div class="space-y-2">
+              <p class="text-sm font-semibold text-primary uppercase tracking-wider text-xs">
+                Giới thiệu
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 leading-snug">
+                Chuyên môn QLDA, thích du lịch khám phá.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <div
+                class="w-14 h-14 rounded-full bg-red-50 dark:bg-red-900/20 flex items-center justify-center text-red-600 border border-red-100 dark:border-red-800">
+                <span class="material-symbols-outlined text-2xl">person</span>
+              </div>
+              <span class="text-xs font-bold text-gray-400">#05</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
+              Nguyễn Hữu Thọ
+            </h3>
+            <div class="space-y-2">
+              <p class="text-sm font-semibold text-primary uppercase tracking-wider text-xs">
+                Giới thiệu
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 leading-snug">
+                Chuyên môn thiết kế công trình XD, thích ca hát và chơi nhạc cụ.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <div
+                class="w-14 h-14 rounded-full bg-pink-50 dark:bg-pink-900/20 flex items-center justify-center text-pink-600 border border-pink-100 dark:border-pink-800">
+                <span class="material-symbols-outlined text-2xl">person_2</span>
+              </div>
+              <span class="text-xs font-bold text-gray-400">#06</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
+              Nguyễn Đình Hiệp
+            </h3>
+            <div class="space-y-2">
+              <p class="text-sm font-semibold text-primary uppercase tracking-wider text-xs">
+                Giới thiệu
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 leading-snug">
+                Thẩm Phán xét xử các vụ án, thích đi ngao du bốn phương.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <div
+                class="w-14 h-14 rounded-full bg-teal-50 dark:bg-teal-900/20 flex items-center justify-center text-teal-600 border border-teal-100 dark:border-teal-800">
+                <span class="material-symbols-outlined text-2xl">person</span>
+              </div>
+              <span class="text-xs font-bold text-gray-400">#07</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
+              Ngô Kim Phụng
+            </h3>
+            <div class="space-y-2">
+              <p class="text-sm font-semibold text-primary uppercase tracking-wider text-xs">
+                Giới thiệu
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 leading-snug">
+                Thích nũng nịu, không ai tin.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group bg-white dark:bg-gray-800 rounded-xl p-8 border border-gray-200 dark:border-gray-700 hover:border-primary/50 hover:shadow-xl transition-all hover:-translate-y-1">
+            <div class="flex items-start justify-between mb-4">
+              <div
+                class="w-14 h-14 rounded-full bg-indigo-50 dark:bg-indigo-900/20 flex items-center justify-center text-indigo-600 border border-indigo-100 dark:border-indigo-800">
+                <span class="material-symbols-outlined text-2xl">person_3</span>
+              </div>
+              <span class="text-xs font-bold text-gray-400">#08</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#0d101c] dark:text-white mb-3">
+              Trần Thị Hồng Nhung
+            </h3>
+            <div class="space-y-2">
+              <p class="text-sm font-semibold text-primary uppercase tracking-wider text-xs">
+                Giới thiệu
+              </p>
+              <p class="text-gray-600 dark:text-gray-300 leading-snug">
+                Tư vấn hướng nghiệp, thích ăn bánh mì, uống latte.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="w-full max-w-7xl px-4 md:px-10 py-16 md:py-24 border-t border-gray-100 dark:border-gray-800">
+      <div class="flex flex-col md:flex-row gap-12 items-start">
+        <div class="flex-1 space-y-6 sticky top-24">
+          <h2 class="text-3xl md:text-4xl font-black tracking-tight text-[#0d101c] dark:text-white">
+            Lý do nhóm chọn WebWhiteboard
+          </h2>
+          <p class="text-lg text-gray-600 dark:text-gray-300">
+            Trong quá trình tìm kiếm công cụ hỗ trợ làm việc nhóm cho đồ án,
+            chúng tôi đã bị thuyết phục bởi sự tối giản và hiệu quả của
+            WebWhiteboard.
+          </p>
+          <ul class="space-y-4 mt-4">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+              <span class="text-gray-700 dark:text-gray-200">Phù hợp cho các buổi họp nhanh (Brainstorming).</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+              <span class="text-gray-700 dark:text-gray-200">Không yêu cầu cài đặt, dễ dàng tiếp cận.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+              <span class="text-gray-700 dark:text-gray-200">Trải nghiệm viết vẽ trực quan.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="flex-[1.5] grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div
+            class="group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md">
+            <div
+              class="w-12 h-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center mb-4 text-primary group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined">bolt</span>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Tốc độ</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Khởi tạo nhanh chóng, giúp nhóm tiết kiệm thời gian thiết lập
+              buổi họp.
+            </p>
+          </div>
+          <div
+            class="group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md">
+            <div
+              class="w-12 h-12 rounded-lg bg-green-50 dark:bg-green-900/30 flex items-center justify-center mb-4 text-green-600 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined">sync</span>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Đồng bộ</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Giúp mọi thành viên đều nắm bắt ý tưởng cùng một lúc dù ở bất cứ
+              đâu.
+            </p>
+          </div>
+          <div
+            class="group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md">
+            <div
+              class="w-12 h-12 rounded-lg bg-purple-50 dark:bg-purple-900/30 flex items-center justify-center mb-4 text-purple-600 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined">gesture</span>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Trực quan</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Giao diện thân thiện, dễ sử dụng ngay cả với những người không
+              rành công nghệ.
+            </p>
+          </div>
+          <div
+            class="group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-primary/50 transition-colors shadow-sm hover:shadow-md">
+            <div
+              class="w-12 h-12 rounded-lg bg-orange-50 dark:bg-orange-900/30 flex items-center justify-center mb-4 text-orange-600 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined">devices</span>
+            </div>
+            <h3 class="text-lg font-bold mb-2">Linh hoạt</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400">
+              Hoạt động tốt trên nhiều thiết bị, hỗ trợ tối đa cho việc học
+              tập di động.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full px-4 md:px-10 py-16">
+      <div
+        class="max-w-5xl mx-auto bg-gradient-to-r from-primary to-blue-700 rounded-2xl overflow-hidden shadow-2xl relative">
+        <div class="absolute inset-0 opacity-10" style="
               background-image: radial-gradient(#ffffff 1px, transparent 1px);
               background-size: 20px 20px;
-            "
-          ></div>
-      
-        </div>
-      </section>
-      <footer
-        class="w-full bg-white dark:bg-gray-900 border-t border-[#e7e9f4] dark:border-gray-800 py-10 px-4 md:px-10"
-      >
-        <div class="mx-auto max-w-[1280px] px-4 sm:px-10">
-        <div
-          class="flex flex-col md:flex-row justify-between items-start gap-8"
-        >
+            "></div>
+
+      </div>
+    </section>
+    <footer class="w-full bg-white dark:bg-gray-900 border-t border-[#e7e9f4] dark:border-gray-800 py-10 px-4 md:px-10">
+      <div class="mx-auto max-w-[1280px] px-4 sm:px-10">
+        <div class="flex flex-col md:flex-row justify-between items-start gap-8">
           <div class="max-w-xs">
-            <div
-              class="flex items-center gap-2 mb-4 text-[#0d101c] dark:text-white"
-            >
+            <div class="flex items-center gap-2 mb-4 text-[#0d101c] dark:text-white">
               <span class="material-symbols-outlined">draw</span>
               <span class="font-bold text-lg">WebWhiteboard</span>
             </div>
@@ -570,9 +463,7 @@
                   <a class="hover:text-primary" href="product.html">Product</a>
                 </li>
                 <li>
-                  <a class="hover:text-primary" href="resource.html"
-                    >Resource</a
-                  >
+                  <a class="hover:text-primary" href="resource.html">Resource</a>
                 </li>
               </ul>
             </div>
@@ -582,27 +473,28 @@
               </h4>
               <ul class="space-y-2 text-sm text-slate-500">
                 <li>
-                  <a
-                    class="hover:text-primary"
-                    href="https://webwhiteboard.com/"
-                    target="_blank"
-                    >Trang chủ sản phẩm</a
-                  >
+                  <a class="hover:text-primary" href="https://webwhiteboard.com/" target="_blank">Trang chủ sản phẩm</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <div
-          class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4"
-        >
+          class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p class="text-xs text-slate-400">
             © 2025 Nhóm 7 - Lớp Nghiệp Vụ Giảng Dạy Cho Giảng Viên - K04. All
             rights reserved.
           </p>
         </div>
       </div>
-      </footer>
-    </main>
-  </body>
+    </footer>
+  </main>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+</body>
+
 </html>

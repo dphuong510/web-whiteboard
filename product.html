@@ -54,6 +54,7 @@
     </style>
 </head>
 
+
 <body class="bg-background-light dark:bg-background-dark transition-colors duration-200">
     <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
         <header
@@ -91,14 +92,31 @@
                             <span class="truncate">Thử công cụ gốc</span>
                         </a>
                     </div>
-                    <button class="md:hidden p-2 text-slate-700 dark:text-slate-200">
+                    <button class="md:hidden p-2 text-slate-700 dark:text-slate-200" onclick="toggleMenu()">
                         <span class="material-symbols-outlined">menu</span>
                     </button>
                 </div>
             </div>
         </header>
-        <!-- VIDEO INTRO -->
+<div
+  id="mobileMenu"
+  class="hidden md:hidden border-b border-[#e7e9f4] dark:border-gray-800 bg-[#f8f9fc] dark:bg-[#101322]"
+>
+  <nav class="flex flex-col gap-4 px-6 py-6">
+    <a href="index.html" class="font-medium">Home</a>
+    <a href="about.html" class="font-medium">About</a>
+    <a href="product.html" class="font-medium">Product</a>
+    <a href="resource.html" class="font-medium">Resource</a>
 
+    <a
+      href="https://webwhiteboard.com/"
+      target="_blank"
+      class="mt-4 inline-flex justify-center rounded-lg bg-primary px-6 py-3 text-white font-bold"
+    >
+      Thử công cụ gốc
+    </a>
+  </nav>
+</div>
         <main class="flex-1">
 
             <section class="relative w-full py-12 md:py-24 px-6">
@@ -192,7 +210,7 @@
                             <p class="text-text-secondary-light dark:text-gray-300 leading-relaxed">
                                 Làm quen với Whiteboard
                                 chỉ trong vài phút. Video hướng dẫn này sẽ giúp bạn nắm bắt công cụ cơ bản.</p>
-                            <video class="w-full object-cover pt-4" src="video.mp4" poster="video-image.png" controls
+                            <video class="w-full object-cover pt-4" src="assets/video.mp4" poster="assets/video-image.png" controls
                                 preload="metadata"></video>
                         </div>
 
@@ -637,6 +655,12 @@
             document.getElementById("successModal").classList.remove("flex");
         }
     </script>
+     <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
 </body>
 <!-- SUCCESS POPUP -->
 <div id="successModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50">
