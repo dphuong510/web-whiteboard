@@ -78,7 +78,7 @@
     </div>
   </header>
   <div id="mobileMenu"
-    class="hidden md:hidden border-b border-[#e7e9f4] dark:border-gray-800 bg-[#f8f9fc] dark:bg-[#101322]">
+    class="hidden md:hidden fixed top-[64px] left-0 right-0 bottom-0 z-40 bg-[#f8f9fc] dark:bg-[#101322] overflow-y-auto border-t border-[#e7e9f4] dark:border-gray-800">
     <nav class="flex flex-col gap-4 px-6 py-6">
       <a href="index.html" class="font-medium">Home</a>
       <a href="about.html" class="font-medium">About</a>
@@ -122,7 +122,6 @@
               href="#team-members">
               Xem thành viên
             </a>
-
           </div>
         </div>
         <div class="order-1 md:order-2 relative group">
@@ -133,16 +132,14 @@
             class="relative w-full aspect-video bg-gray-100 dark:bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-700"
             data-alt="Looping video of team members collaborating on a digital whiteboard, drawing diagrams and sticky notes"
             style="
-                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDX88Siggq9uSHOWMobQegUq-PtI2dAz9pea_w2r9vsjsU9wqeOvcswUxHrwqdTBs5PteHiMx2vt0fchcKlaYxOrX_tZ8A91aca8985vbjXyKvNALIgBpZfKdh_JF4oFTI7pr_b0J9OYub0kzhltkOhwj46VrDRNog4cGxq3ckquccDFLBTuq7CVO69vd3qo1gvnjHcYHi2IY5EtZ9m0BGJwPVD7kK2EOjq5CUs1wq3Rk07TtW0DyaDD2miZ9S1eJnC9oQpzZkpRO8');
+                background-image: url(assets/images/about-top.png);
                 background-size: cover;
                 background-position: center;
               ">
             <div
               class="absolute inset-0 bg-black/10 flex items-center justify-center group-hover:bg-black/20 transition-colors">
-
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -151,9 +148,8 @@
         <span class="material-symbols-outlined text-5xl text-primary mb-6">visibility</span>
         <h2 class="text-3xl font-bold leading-tight mb-6">Mục Tiêu Đồ Án</h2>
         <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed font-light">
-          "Chúng tôi mong muốn tạo
-          ra một không gian thông tin hữu ích, giúp người dùng mới dễ dàng
-          tiếp cận và khai thác sức mạnh của
+          "Chúng tôi mong muốn tạo ra một không gian thông tin hữu ích, giúp
+          người dùng mới dễ dàng tiếp cận và khai thác sức mạnh của
           <span class="text-primary font-semibold">WebWhiteboard</span> cho
           công việc hàng ngày."
         </p>
@@ -171,8 +167,7 @@
             Danh Sách Thành Viên
           </h2>
           <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg">
-            Tám mảnh ghép cá tính cùng chung tay xây dựng và hoàn thiện dự
-            án.
+            Tám mảnh ghép cá tính cùng chung tay xây dựng và hoàn thiện dự án.
           </p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -193,7 +188,8 @@
                 Giới thiệu
               </p>
               <p class="text-gray-600 dark:text-gray-300 leading-snug">
-                Đam mê lập trình web, tìm hiểu về công nghệ và thích đi giao lưu với bạn bè.
+                Đam mê lập trình, tìm hiểu về công nghệ và thích đi giao
+                lưu với bạn bè.
               </p>
             </div>
           </div>
@@ -277,7 +273,8 @@
                 Giới thiệu
               </p>
               <p class="text-gray-600 dark:text-gray-300 leading-snug">
-                Chuyên môn thiết kế công trình XD, thích ca hát và chơi nhạc cụ.
+                Chuyên môn thiết kế công trình XD, thích ca hát và chơi nhạc
+                cụ.
               </p>
             </div>
           </div>
@@ -344,13 +341,12 @@
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
     <section class="w-full max-w-7xl px-4 md:px-10 py-16 md:py-24 border-t border-gray-100 dark:border-gray-800">
       <div class="flex flex-col md:flex-row gap-12 items-start">
-        <div class="flex-1 space-y-6 sticky top-24">
+        <div class="flex-1 space-y-6 md:sticky md:top-24">
           <h2 class="text-3xl md:text-4xl font-black tracking-tight text-[#0d101c] dark:text-white">
             Lý do nhóm chọn WebWhiteboard
           </h2>
@@ -433,7 +429,6 @@
               background-image: radial-gradient(#ffffff 1px, transparent 1px);
               background-size: 20px 20px;
             "></div>
-
       </div>
     </section>
     <footer class="w-full bg-white dark:bg-gray-900 border-t border-[#e7e9f4] dark:border-gray-800 py-10 px-4 md:px-10">

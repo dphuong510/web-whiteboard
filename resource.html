@@ -1,677 +1,486 @@
 <!DOCTYPE html>
 
 <html class="light" lang="vi">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Tài nguyên giáo dục: WEBSITE WHITEBOARD</title>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <!-- Tailwind Config -->
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#2547f4",
-              "background-light": "#f5f6f8",
-              "background-dark": "#101322",
-            },
-            fontFamily: {
-              display: ["Lexend", "sans-serif"],
-              serif: ["Merriweather", "serif"],
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Tài nguyên giáo dục: WEBSITE WHITEBOARD</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Tailwind Config -->
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#2547f4",
+            "background-light": "#f5f6f8",
+            "background-dark": "#101322",
+          },
+          fontFamily: {
+            display: ["Lexend", "sans-serif"],
+            serif: ["Merriweather", "serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px",
           },
         },
-      };
-    </script>
-    <style>
-      /* Custom scrollbar for better aesthetics */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #cbd5e1;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #94a3b8;
-      }
-      .card-hover:hover .play-overlay {
-        opacity: 1;
-      }
-    </style>
-  </head>
-  
-  <body
-    class="bg-background-light dark:bg-background-dark font-display text-[#0d101c] dark:text-white overflow-x-hidden"
-  >
-    <div
-      class="relative flex h-auto min-h-screen w-full flex-col group/design-root"
-    >
-      <!-- Navbar -->
-      <header
-        class="sticky top-0 z-50 w-full border-b border-[#e7e9f4] dark:border-gray-800 bg-[#f8f9fc]/90 dark:bg-[#101322]/90 backdrop-blur-md"
-      >
-        <div class="mx-auto max-w-[1280px] px-4 sm:px-10 py-3">
-          <div class="flex items-center justify-between">
-            <div class="flex items-center gap-4">
-              <div
-                class="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary"
-              >
-                <span class="material-symbols-outlined !text-[24px]">draw</span>
-              </div>
-              <div>
-                <h2
-                  class="text-lg font-bold leading-tight tracking-[-0.015em] text-[#0d101c] dark:text-white"
-                >
-                  WebWhiteboard
-                </h2>
-                <p
-                  class="text-[10px] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400"
-                >
-                  Đồ án Nhóm 7
-                </p>
-              </div>
+      },
+    };
+  </script>
+  <style>
+    /* Custom scrollbar for better aesthetics */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+
+    .card-hover:hover .play-overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0d101c] dark:text-white overflow-x-hidden">
+  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root">
+    <!-- Navbar -->
+    <header
+      class="sticky top-0 z-50 w-full border-b border-[#e7e9f4] dark:border-gray-800 bg-[#f8f9fc]/90 dark:bg-[#101322]/90 backdrop-blur-md">
+      <div class="mx-auto max-w-[1280px] px-4 sm:px-10 py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <div class="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+              <span class="material-symbols-outlined !text-[24px]">draw</span>
             </div>
-            <div class="hidden md:flex flex-1 justify-end gap-8">
-              <nav class="flex items-center gap-9">
-                <a
-                  class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
-                  href="index.html"
-                  >Home</a
-                >
-                <a
-                  class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
-                  href="about.html"
-                  >About</a
-                >
-                <a
-                  class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
-                  href="product.html"
-                  >Product</a
-                >
-                <a
-                  class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
-                  href="resource.html"
-                  >Resource</a
-                >
-              </nav>
-              <a
-                class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-700 transition-colors text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em]"
-                href="https://webwhiteboard.com/"
-                target="_blank"
-              >
-                <span class="truncate">Thử công cụ gốc</span>
-              </a>
+            <div>
+              <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-[#0d101c] dark:text-white">
+                WebWhiteboard
+              </h2>
+              <p class="text-[10px] font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                Đồ án Nhóm 7
+              </p>
             </div>
-            <button class="md:hidden p-2 text-slate-700 dark:text-slate-200" onclick="toggleMenu()">
-              <span class="material-symbols-outlined">menu</span>
+          </div>
+          <div class="hidden md:flex flex-1 justify-end gap-8">
+            <nav class="flex items-center gap-9">
+              <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+                href="index.html">Home</a>
+              <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+                href="about.html">About</a>
+              <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+                href="product.html">Product</a>
+              <a class="text-sm font-medium hover:text-primary transition-colors text-[#0d101c] dark:text-gray-200"
+                href="resource.html">Resource</a>
+            </nav>
+            <a class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-700 transition-colors text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em]"
+              href="https://webwhiteboard.com/" target="_blank">
+              <span class="truncate">Thử công cụ gốc</span>
+            </a>
+          </div>
+          <button class="md:hidden p-2 text-slate-700 dark:text-slate-200" onclick="toggleMenu()">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div id="mobileMenu"
+      class="hidden md:hidden fixed top-[64px] left-0 right-0 bottom-0 z-40 bg-[#f8f9fc] dark:bg-[#101322] overflow-y-auto border-t border-[#e7e9f4] dark:border-gray-800">
+      <nav class="flex flex-col gap-4 px-6 py-6">
+        <a href="index.html" class="font-medium">Home</a>
+        <a href="about.html" class="font-medium">About</a>
+        <a href="product.html" class="font-medium">Product</a>
+        <a href="resource.html" class="font-medium">Resource</a>
+
+        <a href="https://webwhiteboard.com/" target="_blank"
+          class="mt-4 inline-flex justify-center rounded-lg bg-primary px-6 py-3 text-white font-bold">
+          Thử công cụ gốc
+        </a>
+      </nav>
+    </div>
+    <!-- Main Content Layout -->
+    <div class="flex flex-1 flex-col items-center">
+      <!-- Hero Section -->
+      <div class="w-full max-w-[1200px] px-4 md:px-10 py-12 md:py-20">
+        <div class="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div class="flex flex-col gap-6 text-left">
+            <div
+              class="inline-flex w-fit items-center gap-2 rounded-full border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] px-3 py-1 text-xs font-medium text-primary shadow-sm">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              </span>
+              Cập nhật tháng 12/2025
+            </div>
+            <h1
+              class="text-4xl font-bold leading-[1.15] text-[#0d101c] dark:text-white md:text-5xl lg:text-6xl tracking-tight">
+              Khám phá Kho <br />
+              <span class="text-primary">Tài nguyên Giáo dục</span>
+            </h1>
+            <p class="text-base font-light leading-relaxed text-[#49579c] dark:text-gray-400 md:text-lg max-w-[540px]">
+              Tổng hợp các công cụ Whiteboard, LMS và ứng dụng hỗ trợ giảng
+              dạy trực tuyến hiệu quả nhất. Được tuyển chọn kỹ lưỡng cho mục
+              đích giáo dục của bạn.
+            </p>
+          </div>
+          <div
+            class="relative w-full rounded-2xl bg-[#e7e9f4] dark:bg-[#1a1f36] aspect-[4/3] overflow-hidden shadow-2xl group">
+            <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+              data-alt="Abstract 3D shapes representing education tools and digital learning" style="
+                  background-image: url(assets/images/resource-top.png);
+                "></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0d101c]/60 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Filters & Stats -->
+      <div class="w-full border-y border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#101322]">
+        <div
+          class="mx-auto flex w-full max-w-[1200px] flex-col gap-4 px-4 py-4 md:flex-row md:items-center md:justify-between md:px-10">
+          <div class="flex gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
+            <button
+              class="flex h-9 shrink-0 items-center gap-2 rounded-full bg-[#0d101c] px-4 text-sm font-medium text-white shadow-md transition-all">
+              <span class="material-symbols-outlined text-[18px]">grid_view</span>
+              Tất cả
             </button>
           </div>
         </div>
-      </header>
-      <div
-  id="mobileMenu"
-  class="hidden md:hidden border-b border-[#e7e9f4] dark:border-gray-800 bg-[#f8f9fc] dark:bg-[#101322]"
->
-  <nav class="flex flex-col gap-4 px-6 py-6">
-    <a href="index.html" class="font-medium">Home</a>
-    <a href="about.html" class="font-medium">About</a>
-    <a href="product.html" class="font-medium">Product</a>
-    <a href="resource.html" class="font-medium">Resource</a>
-
-    <a
-      href="https://webwhiteboard.com/"
-      target="_blank"
-      class="mt-4 inline-flex justify-center rounded-lg bg-primary px-6 py-3 text-white font-bold"
-    >
-      Thử công cụ gốc
-    </a>
-  </nav>
-</div>
-      <!-- Main Content Layout -->
-      <div class="flex flex-1 flex-col items-center">
-        <!-- Hero Section -->
-        <div class="w-full max-w-[1200px] px-4 md:px-10 py-12 md:py-20">
-          <div class="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            <div class="flex flex-col gap-6 text-left">
-              <div
-                class="inline-flex w-fit items-center gap-2 rounded-full border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] px-3 py-1 text-xs font-medium text-primary shadow-sm"
-              >
-                <span class="relative flex h-2 w-2">
-                  <span
-                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
-                  ></span>
-                  <span
-                    class="relative inline-flex rounded-full h-2 w-2 bg-primary"
-                  ></span>
-                </span>
-                Cập nhật tháng 12/2025
-              </div>
-              <h1
-                class="font-serif text-4xl font-bold leading-[1.15] text-[#0d101c] dark:text-white md:text-5xl lg:text-6xl tracking-tight"
-              >
-                Khám phá Kho <br />
-                <span class="text-primary italic">Tài nguyên Giáo dục</span>
-              </h1>
-              <p
-                class="text-base font-light leading-relaxed text-[#49579c] dark:text-gray-400 md:text-lg max-w-[540px]"
-              >
-                Tổng hợp các công cụ Whiteboard, LMS và ứng dụng hỗ trợ giảng
-                dạy trực tuyến hiệu quả nhất. Được tuyển chọn kỹ lưỡng cho mục
-                đích giáo dục của bạn.
-              </p>
-            </div>
-            <div
-              class="relative w-full rounded-2xl bg-[#e7e9f4] dark:bg-[#1a1f36] aspect-[4/3] overflow-hidden shadow-2xl group"
-            >
-              <div
-                class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                data-alt="Abstract 3D shapes representing education tools and digital learning"
-                style="
-                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAPcOMP9b26I5_3ZLOu1KMHXLgPrpIaQFH5ca4EZF7d4dCNZDfTcWS60WXyI4s93h1Ftasc-iDjboDLYfJb6kTCrZHSu0aw7i83Hwq73gUauEB0gc_wYf0-wsVuB4EFly-OXP2_3rKH3aSK6FYI2QyLmh82Lg2-HOHzFOkuJyNMRPbXT-idvbgaxbqREQ7o979ti88hU3OeLZPZfxBWoVZt8ZSdI3JoXJO8Vq1P-8I4-EI5Al4wPGviHz6gFact5AMMKqxaD9uL-8');
-                "
-              ></div>
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-[#0d101c]/60 to-transparent"
-              ></div>
-              <div class="absolute bottom-6 left-6 right-6"></div>
-            </div>
-          </div>
-        </div>
-        <!-- Filters & Stats -->
-        <div
-          class="w-full border-y border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#101322]"
-        >
-          <div
-            class="mx-auto flex w-full max-w-[1200px] flex-col gap-4 px-4 py-4 md:flex-row md:items-center md:justify-between md:px-10"
-          >
-            <div class="flex gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
-              <button
-                class="flex h-9 shrink-0 items-center gap-2 rounded-full bg-[#0d101c] px-4 text-sm font-medium text-white shadow-md transition-all"
-              >
-                <span class="material-symbols-outlined text-[18px]"
-                  >grid_view</span
-                >
-                Tất cả
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Resource Grid -->
-        <div class="w-full max-w-[1200px] px-4 md:px-10 py-10">
-          <div class="mb-8 flex items-center justify-between">
-            <h2 class="text-2xl font-bold text-[#0d101c] dark:text-white">
-              Công cụ nổi bật
-            </h2>
-          </div>
-          <div
-            class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-          >
-            <!-- Card 1: Miro -->
-            <div
-              class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5"
-            >
-              <div
-                class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800"
-              >
-                <div
-                  class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                  data-alt="Miro dashboard interface showing sticky notes and diagrams"
-                  style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCe4U8LJKVhJVK1Qo1YdXHIVCsdvjVEEXQOXyWdgWe7732hHqgtxk5j-Z3t9Eso4u6m-3-TzenZoFEbUW2xVQnmTaFQW9nnP2EKFKDYtQoUQcgBh3y8IeIGB1fFzjr0FD1TxW5EdkE4yok0dO9TOV14_GnxxTvSxMOGmk4p9wLSXfW7fb3iJka3H1LlSuIAdu4xxAJi7rA3dzvsshOFeKOqr1gX1aywqlByq6YjsT3QrGKtKf0nCLxCTGZYBJDeBE3APs3KVkHpUJs');
-                  "
-                ></div>
-
-                <div
-                  class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-primary shadow-sm backdrop-blur-sm"
-                >
-                  Whiteboard
-                </div>
-              </div>
-              <a href="https://webwhiteboard.com/" class="flex flex-1 flex-col p-4">
-                <div class="flex items-start justify-between">
-                  <h3
-                    class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors"
-                  >
-                    Miro
-                  </h3>
-                  <div class="flex items-center gap-1 text-yellow-500">
-                    <span
-                      class="material-symbols-outlined text-[16px] fill-current"
-                      >star</span
-                    >
-                    <span
-                      class="text-xs font-bold text-[#0d101c] dark:text-white"
-                      >4.9</span
-                    >
-                  </div>
-                </div>
-                <p
-                  class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400"
-                >
-                  Bảng trắng cộng tác trực tuyến vô hạn dành cho teamwork,
-                  brainstorming và lập kế hoạch.
-                </p>
-                <div class="mt-auto flex items-center justify-between pt-4">
-                  <span
-                    class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded"
-                    >Miễn phí cơ bản</span
-                  >
-                  <button
-                    class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors"
-                  >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >arrow_outward</span
-                    >
-                  </button>
-                </div>
-              </a>
-            </div>
-            <!-- Card 2: Kahoot -->
-            <a href="https://kahoot.it/"
-              class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5"
-            >
-              <div
-                class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800"
-              >
-                <div
-                  class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                  data-alt="Students looking at a tablet playing a quiz game"
-                  style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCPY_E8X94XPjtc0NQNDEBqDb2rcmxp0IQENMSKpGbIqZzucCaxjoA4bGn-oFXF-LaFfACiijQv2L-inMaSFUMobPypZ0GEV4YupP-V4hA1BRDNy6kZxoxSQ1dax9-8LB3x8arbETwR-7WcritS4COgOW2psJQergdGMKlfbdArtW6ESchmZDK-uZ1dlduhbtNm7GxiuhJNhaRbx0ehycae4bFPnzL1Kh8RWYO5IY8vQWX0YKYAeLMSA-qBXGZ0CTWml0OsFiwNqk');
-                  "
-                ></div>
-
-                <div
-                  class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-purple-600 shadow-sm backdrop-blur-sm"
-                >
-                  Quiz &amp; Games
-                </div>
-              </div>
-              <div class="flex flex-1 flex-col p-4">
-                <div class="flex items-start justify-between">
-                  <h3
-                    class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors"
-                  >
-                    Kahoot!
-                  </h3>
-                  <div class="flex items-center gap-1 text-yellow-500">
-                    <span
-                      class="material-symbols-outlined text-[16px] fill-current"
-                      >star</span
-                    >
-                    <span
-                      class="text-xs font-bold text-[#0d101c] dark:text-white"
-                      >4.8</span
-                    >
-                  </div>
-                </div>
-                <p
-                  class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400"
-                >
-                  Nền tảng học tập dựa trên trò chơi giúp bài giảng trở nên sôi
-                  động và hấp dẫn hơn.
-                </p>
-                <div class="mt-auto flex items-center justify-between pt-4">
-                  <span
-                    class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded"
-                    >Miễn phí</span
-                  >
-                  <button
-                    class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors"
-                  >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >arrow_outward</span
-                    >
-                  </button>
-                </div>
-              </div>
-            </a>
-            <!-- Card 3: Canva -->
-            <a href="https://www.canva.com/"
-              class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5"
-            >
-              <div
-                class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800"
-              >
-                <div
-                  class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                  data-alt="Colorful graphic design interface with various templates"
-                  style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCicZjukMq_d5gw0HTdA5JxmcNzHwpFzLh9tQ0QnoIxGw59fRQB9dvlukJyl3wlfX7vZEnl0R5XsOAu0uSl-bpmDqoiIRAp1VGcw4QqmzwVkvaq7KTW36JbMB7HCX3XQ5KyOKIf1nkYezHWs90yfesPNvbBIYrko08QF9kNBn4OuSEZHTBWWztdHl5BZxsQPxFhLumsdZxVBNPSUxxsYah322U2HnuTxr-4ew6dQh5cwxevlu4pz219Uwuaf4rqSCPU-vAJMJwoAJ8');
-                  "
-                ></div>
-
-                <div
-                  class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-blue-500 shadow-sm backdrop-blur-sm"
-                >
-                  Design
-                </div>
-              </div>
-              <div class="flex flex-1 flex-col p-4">
-                <div class="flex items-start justify-between">
-                  <h3
-                    class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors"
-                  >
-                    Canva Edu
-                  </h3>
-                  <div class="flex items-center gap-1 text-yellow-500">
-                    <span
-                      class="material-symbols-outlined text-[16px] fill-current"
-                      >star</span
-                    >
-                    <span
-                      class="text-xs font-bold text-[#0d101c] dark:text-white"
-                      >4.9</span
-                    >
-                  </div>
-                </div>
-                <p
-                  class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400"
-                >
-                  Công cụ thiết kế đồ họa dễ sử dụng với hàng nghìn mẫu bài
-                  giảng và tài liệu học tập.
-                </p>
-                <div class="mt-auto flex items-center justify-between pt-4">
-                  <span
-                    class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded"
-                    >Miễn phí cho GV</span
-                  >
-                  <button
-                    class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors"
-                  >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >arrow_outward</span
-                    >
-                  </button>
-                </div>
-              </div>
-            </a>
-            <!-- Card 4: Notion -->
-            <a href="https://www.notion.com/"
-              class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5"
-            >
-              <div
-                class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800"
-              >
-                <div
-                  class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                  data-alt="Minimalist workspace setup with laptop showing productivity app"
-                  style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBc4JCD_gDlbYt9JGr8sKYE1YBVmKBHgpHK_S1Wor728IRNXBd5froJ5fRROhAPljAznbaEdZV4i8Q3-3Qdl8aFLVb_MXggzdCcQWl0ObXtqqmC83h00IOKpggwx8OBS9oLSyOSQkXsHgCfck61LQal3f-cp06jcK4MWiuXwc0H4ScvvqOSa-HiwFxxfBp7LLlsHqCzSYNACOB2xNHW_iEV_QIRVvmYgQeDyYkw4puh63GeF7pciFv8uPnys6QQHzzka71aiMuutGA');
-                  "
-                ></div>
-
-                <div
-                  class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-gray-800 shadow-sm backdrop-blur-sm"
-                >
-                  Productivity
-                </div>
-              </div>
-              <div class="flex flex-1 flex-col p-4">
-                <div class="flex items-start justify-between">
-                  <h3
-                    class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors"
-                  >
-                    Notion
-                  </h3>
-                  <div class="flex items-center gap-1 text-yellow-500">
-                    <span
-                      class="material-symbols-outlined text-[16px] fill-current"
-                      >star</span
-                    >
-                    <span
-                      class="text-xs font-bold text-[#0d101c] dark:text-white"
-                      >4.7</span
-                    >
-                  </div>
-                </div>
-                <p
-                  class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400"
-                >
-                  Không gian làm việc tất cả trong một: ghi chú, quản lý dự án
-                  và tài liệu học tập.
-                </p>
-                <div class="mt-auto flex items-center justify-between pt-4">
-                  <span
-                    class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded"
-                    >Miễn phí cơ bản</span
-                  >
-                  <button
-                    class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors"
-                  >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >arrow_outward</span
-                    >
-                  </button>
-                </div>
-              </div>
-            </a>
-            <!-- Card 5: Zoom -->
-            <a href="https://www.zoom.com/"
-              class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5"
-            >
-              <div
-                class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800"
-              >
-                <div
-                  class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                  data-alt="Person on a video call on a laptop screen"
-                  style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_VmnCpgE4OvfLedT2lyoO1iVXeALz1lR_sgKWqmLA8SCXBX_dn-ve8ygUCpKAxaxspn0FKa2LDRSUW36947wUQIMtrswmPdlaTmMI4txHuwcux5k9UW_P1nJwZVMPbKzeEv6mCQLJFNkNHnRi6JF7UeJQSmuGf9jNnR1FaqQ5cxeiyA5he_hpm9xtN64TbY00FAdwgH4flBXxT9mbnF0J5g2NOCph_Aj2vjrIEPkdZzcG5qs5Sy5Ir2Y6l-sNWhptaXoHs0aabcw');
-                  "
-                ></div>
-
-                <div
-                  class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-blue-700 shadow-sm backdrop-blur-sm"
-                >
-                  Video Call
-                </div>
-              </div>
-              <div class="flex flex-1 flex-col p-4">
-                <div class="flex items-start justify-between">
-                  <h3
-                    class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors"
-                  >
-                    Zoom
-                  </h3>
-                  <div class="flex items-center gap-1 text-yellow-500">
-                    <span
-                      class="material-symbols-outlined text-[16px] fill-current"
-                      >star</span
-                    >
-                    <span
-                      class="text-xs font-bold text-[#0d101c] dark:text-white"
-                      >4.6</span
-                    >
-                  </div>
-                </div>
-                <p
-                  class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400"
-                >
-                  Ứng dụng họp trực tuyến phổ biến với chất lượng video HD và
-                  tính năng chia sẻ màn hình.
-                </p>
-                <div class="mt-auto flex items-center justify-between pt-4">
-                  <span
-                    class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded"
-                    >Miễn phí 40p</span
-                  >
-                  <button
-                    class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors"
-                  >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >arrow_outward</span
-                    >
-                  </button>
-                </div>
-              </div>
-            </a>
-            <!-- Card 6: Quizizz -->
-            <a href="https://wayground.com/"
-              class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5"
-            >
-              <div
-                class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800"
-              >
-                <div
-                  class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                  data-alt="Illustration of a quiz game interface with multiple choice questions"
-                  style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBtvG71YsIXBHIK2LgVB_o_JkEzTtnGdUUR0anED2MrvnTClYJ-sLW_p-uYYFnCVjAMv4WiP-Th_pdp4uBu7JpdcxtQfeDCDlmAUbAehKqIzPthCilsZSnd-VsSIYevQWpNiXD_Vzo2ukRuMYBBjGcvJa1awQG6WTWJZPXgcPRLjyKx0AqtrG8De9y6mMWILgjWtJtVVwH4LmhommcqhTOmga6ER83eegR0cVKeABp8dlg9ZFZG7BDjSYAdihiFlJKqHeGfvfhc3_A');
-                  "
-                ></div>
-                <div
-                  class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-purple-600 shadow-sm backdrop-blur-sm"
-                >
-                  Quiz &amp; Games
-                </div>
-              </div>
-              <div class="flex flex-1 flex-col p-4">
-                <div class="flex items-start justify-between">
-                  <h3
-                    class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors"
-                  >
-                    Quizizz
-                  </h3>
-                  <div class="flex items-center gap-1 text-yellow-500">
-                    <span
-                      class="material-symbols-outlined text-[16px] fill-current"
-                      >star</span
-                    >
-                    <span
-                      class="text-xs font-bold text-[#0d101c] dark:text-white"
-                      >4.8</span
-                    >
-                  </div>
-                </div>
-                <p
-                  class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400"
-                >
-                  Tạo bài kiểm tra trắc nghiệm tương tác với chế độ tự học hoặc
-                  thi đua trực tiếp.
-                </p>
-                <div class="mt-auto flex items-center justify-between pt-4">
-                  <span
-                    class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded"
-                    >Miễn phí</span
-                  >
-                  <button
-                    class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors"
-                  >
-                    <span class="material-symbols-outlined text-[20px]"
-                      >arrow_outward</span
-                    >
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <footer
-          class="w-full border-t border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#101322] py-8"
-        >
-          <div class="mx-auto max-w-[1280px] px-4 sm:px-10">
-            <div
-              class="flex flex-col md:flex-row justify-between items-start gap-8"
-            >
-              <div class="max-w-xs">
-                <div
-                  class="flex items-center gap-2 mb-4 text-[#0d101c] dark:text-white"
-                >
-                  <span class="material-symbols-outlined">draw</span>
-                  <span class="font-bold text-lg">WebWhiteboard</span>
-                </div>
-                <p class="text-sm text-slate-500 leading-relaxed">
-                  Đây là website phục vụ cho mục đích học tập và báo cáo đồ án
-                  môn học. Không phải trang web chính thức của sản phẩm.
-                </p>
-              </div>
-              <div class="flex gap-16 flex-wrap">
-                <div>
-                  <h4 class="font-bold text-[#0d101c] dark:text-white mb-4">
-                    Điều hướng
-                  </h4>
-                  <ul class="space-y-2 text-sm text-slate-500">
-                    <li><a class="hover:text-primary" href="#">Home</a></li>
-                    <li>
-                      <a class="hover:text-primary" href="about.html">About</a>
-                    </li>
-                    <li>
-                      <a class="hover:text-primary" href="product.html"
-                        >Product</a
-                      >
-                    </li>
-                    <li>
-                      <a class="hover:text-primary" href="resource.html"
-                        >Resource</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 class="font-bold text-[#0d101c] dark:text-white mb-4">
-                    Liên kết
-                  </h4>
-                  <ul class="space-y-2 text-sm text-slate-500">
-                    <li>
-                      <a
-                        class="hover:text-primary"
-                        href="https://webwhiteboard.com/"
-                        target="_blank"
-                        >Trang chủ sản phẩm</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div
-              class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4"
-            >
-              <p class="text-xs text-slate-400">
-                © 2025 Nhóm 7 - Lớp Nghiệp Vụ Giảng Dạy Cho Giảng Viên - K04.
-                All rights reserved.
-              </p>
-            </div>
-          </div>
-        </footer>
       </div>
+      <!-- Resource Grid -->
+      <div class="w-full max-w-[1200px] px-4 md:px-10 py-10">
+        <div class="mb-8 flex items-center justify-between">
+          <h2 class="text-2xl font-bold text-[#0d101c] dark:text-white">
+            Công cụ nổi bật
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <!-- Card 1: Miro -->
+          <div
+            class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5">
+            <div class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                data-alt="Miro dashboard interface showing sticky notes and diagrams" style="
+                    background-image: url(assets/images/resource-miro.png);
+                  "></div>
+
+              <div
+                class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-primary shadow-sm backdrop-blur-sm">
+                Whiteboard
+              </div>
+            </div>
+            <a href="https://webwhiteboard.com/" class="flex flex-1 flex-col p-4">
+              <div class="flex items-start justify-between">
+                <h3 class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors">
+                  Miro
+                </h3>
+                <div class="flex items-center gap-1 text-yellow-500">
+                  <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                  <span class="text-xs font-bold text-[#0d101c] dark:text-white">4.9</span>
+                </div>
+              </div>
+              <p class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400">
+                Bảng trắng cộng tác trực tuyến vô hạn dành cho teamwork,
+                brainstorming và lập kế hoạch.
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span
+                  class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded">Miễn
+                  phí cơ bản</span>
+                <button
+                  class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors">
+                  <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+                </button>
+              </div>
+            </a>
+          </div>
+          <!-- Card 2: Kahoot -->
+          <a href="https://kahoot.it/"
+            class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5">
+            <div class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                data-alt="Students looking at a tablet playing a quiz game" style="
+                    background-image: url(assets/images/resource-kahoot.png);
+                  "></div>
+
+              <div
+                class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-purple-600 shadow-sm backdrop-blur-sm">
+                Quiz &amp; Games
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-4">
+              <div class="flex items-start justify-between">
+                <h3 class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors">
+                  Kahoot!
+                </h3>
+                <div class="flex items-center gap-1 text-yellow-500">
+                  <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                  <span class="text-xs font-bold text-[#0d101c] dark:text-white">4.8</span>
+                </div>
+              </div>
+              <p class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400">
+                Nền tảng học tập dựa trên trò chơi giúp bài giảng trở nên sôi
+                động và hấp dẫn hơn.
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span
+                  class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded">Miễn
+                  phí</span>
+                <button
+                  class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors">
+                  <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+                </button>
+              </div>
+            </div>
+          </a>
+          <!-- Card 3: Canva -->
+          <a href="https://www.canva.com/"
+            class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5">
+            <div class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                data-alt="Colorful graphic design interface with various templates" style="
+                    background-image: url(assets/images/resource-canva.png);
+                  "></div>
+
+              <div
+                class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-blue-500 shadow-sm backdrop-blur-sm">
+                Design
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-4">
+              <div class="flex items-start justify-between">
+                <h3 class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors">
+                  Canva Edu
+                </h3>
+                <div class="flex items-center gap-1 text-yellow-500">
+                  <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                  <span class="text-xs font-bold text-[#0d101c] dark:text-white">4.9</span>
+                </div>
+              </div>
+              <p class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400">
+                Công cụ thiết kế đồ họa dễ sử dụng với hàng nghìn mẫu bài
+                giảng và tài liệu học tập.
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span
+                  class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded">Miễn
+                  phí cho GV</span>
+                <button
+                  class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors">
+                  <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+                </button>
+              </div>
+            </div>
+          </a>
+          <!-- Card 4: Notion -->
+          <a href="https://www.notion.com/"
+            class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5">
+            <div class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                data-alt="Minimalist workspace setup with laptop showing productivity app" style="
+                    background-image: url(assets/images/resource-notion.png);
+                  "></div>
+
+              <div
+                class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-gray-800 shadow-sm backdrop-blur-sm">
+                Productivity
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-4">
+              <div class="flex items-start justify-between">
+                <h3 class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors">
+                  Notion
+                </h3>
+                <div class="flex items-center gap-1 text-yellow-500">
+                  <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                  <span class="text-xs font-bold text-[#0d101c] dark:text-white">4.7</span>
+                </div>
+              </div>
+              <p class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400">
+                Không gian làm việc tất cả trong một: ghi chú, quản lý dự án
+                và tài liệu học tập.
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span
+                  class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded">Miễn
+                  phí cơ bản</span>
+                <button
+                  class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors">
+                  <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+                </button>
+              </div>
+            </div>
+          </a>
+          <!-- Card 5: Zoom -->
+          <a href="https://www.zoom.com/"
+            class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5">
+            <div class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                data-alt="Person on a video call on a laptop screen" style="
+                    background-image: url(assets/images/resource-zoom.png);
+                  "></div>
+
+              <div
+                class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-blue-700 shadow-sm backdrop-blur-sm">
+                Video Call
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-4">
+              <div class="flex items-start justify-between">
+                <h3 class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors">
+                  Zoom
+                </h3>
+                <div class="flex items-center gap-1 text-yellow-500">
+                  <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                  <span class="text-xs font-bold text-[#0d101c] dark:text-white">4.6</span>
+                </div>
+              </div>
+              <p class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400">
+                Ứng dụng họp trực tuyến phổ biến với chất lượng video HD và
+                tính năng chia sẻ màn hình.
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span
+                  class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded">Miễn
+                  phí 40p</span>
+                <button
+                  class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors">
+                  <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+                </button>
+              </div>
+            </div>
+          </a>
+          <!-- Card 6: Quizizz -->
+          <a href="https://wayground.com/"
+            class="group card-hover flex flex-col overflow-hidden rounded-xl border border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#1a1f36] shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:hover:shadow-primary/5">
+            <div class="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                data-alt="Illustration of a quiz game interface with multiple choice questions" style="
+                    background-image: url(assets/images/resource-quizizz.png);
+                  "></div>
+              <div
+                class="absolute left-3 top-3 rounded bg-white/90 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-purple-600 shadow-sm backdrop-blur-sm">
+                Quiz &amp; Games
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col p-4">
+              <div class="flex items-start justify-between">
+                <h3 class="text-lg font-bold text-[#0d101c] dark:text-white group-hover:text-primary transition-colors">
+                  Quizizz
+                </h3>
+                <div class="flex items-center gap-1 text-yellow-500">
+                  <span class="material-symbols-outlined text-[16px] fill-current">star</span>
+                  <span class="text-xs font-bold text-[#0d101c] dark:text-white">4.8</span>
+                </div>
+              </div>
+              <p class="mt-2 line-clamp-2 text-sm text-[#49579c] dark:text-gray-400">
+                Tạo bài kiểm tra trắc nghiệm tương tác với chế độ tự học hoặc
+                thi đua trực tiếp.
+              </p>
+              <div class="mt-auto flex items-center justify-between pt-4">
+                <span
+                  class="text-xs font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded">Miễn
+                  phí</span>
+                <button
+                  class="rounded-lg bg-[#f5f6f8] dark:bg-[#2a2f45] p-2 text-[#0d101c] dark:text-white hover:bg-primary hover:text-white transition-colors">
+                  <span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <footer class="w-full border-t border-[#e7e9f4] dark:border-[#2a2f45] bg-white dark:bg-[#101322] py-8">
+        <div class="mx-auto max-w-[1280px] px-4 sm:px-10">
+          <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+            <div class="max-w-xs">
+              <div class="flex items-center gap-2 mb-4 text-[#0d101c] dark:text-white">
+                <span class="material-symbols-outlined">draw</span>
+                <span class="font-bold text-lg">WebWhiteboard</span>
+              </div>
+              <p class="text-sm text-slate-500 leading-relaxed">
+                Đây là website phục vụ cho mục đích học tập và báo cáo đồ án
+                môn học. Không phải trang web chính thức của sản phẩm.
+              </p>
+            </div>
+            <div class="flex gap-16 flex-wrap">
+              <div>
+                <h4 class="font-bold text-[#0d101c] dark:text-white mb-4">
+                  Điều hướng
+                </h4>
+                <ul class="space-y-2 text-sm text-slate-500">
+                  <li><a class="hover:text-primary" href="#">Home</a></li>
+                  <li>
+                    <a class="hover:text-primary" href="about.html">About</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-primary" href="product.html">Product</a>
+                  </li>
+                  <li>
+                    <a class="hover:text-primary" href="resource.html">Resource</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-[#0d101c] dark:text-white mb-4">
+                  Liên kết
+                </h4>
+                <ul class="space-y-2 text-sm text-slate-500">
+                  <li>
+                    <a class="hover:text-primary" href="https://webwhiteboard.com/" target="_blank">Trang chủ sản
+                      phẩm</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-slate-400">
+              © 2025 Nhóm 7 - Lớp Nghiệp Vụ Giảng Dạy Cho Giảng Viên - K04.
+              All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
-     <script>
+  </div>
+  <script>
     function toggleMenu() {
       const menu = document.getElementById("mobileMenu");
       menu.classList.toggle("hidden");
     }
   </script>
-  </body>
+</body>
+
 </html>

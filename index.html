@@ -83,17 +83,14 @@
             <span class="truncate">Thử công cụ gốc</span>
           </a>
         </div>
-        <button class="md:hidden p-2 text-slate-700 dark:text-slate-200 " onclick="toggleMenu()">
+        <button class="md:hidden p-2 text-slate-700 dark:text-slate-200" onclick="toggleMenu()">
           <span class="material-symbols-outlined">menu</span>
         </button>
       </div>
     </div>
-
-
-
   </header>
   <div id="mobileMenu"
-    class="hidden md:hidden border-b border-[#e7e9f4] dark:border-gray-800 bg-[#f8f9fc] dark:bg-[#101322]">
+    class="hidden md:hidden fixed top-[64px] left-0 right-0 bottom-0 z-40 bg-[#f8f9fc] dark:bg-[#101322] overflow-y-auto border-t border-[#e7e9f4] dark:border-gray-800">
     <nav class="flex flex-col gap-4 px-6 py-6">
       <a href="index.html" class="font-medium">Home</a>
       <a href="about.html" class="font-medium">About</a>
@@ -124,25 +121,24 @@
               phức tạp.
             </p>
             <div class="flex flex-wrap gap-4 pt-2">
-              <a class="flex  cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-blue-700 text-white text-base font-bold transition-all shadow-lg shadow-primary/25"
+              <a class="flex cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-blue-700 text-white text-base font-bold transition-all shadow-lg shadow-primary/25"
                 href="#features">
                 Khám phá tính năng
               </a>
-
             </div>
             <div class="flex items-center gap-4 mt-4 text-sm text-slate-500 dark:text-slate-400">
               <div class="flex -space-x-2">
                 <div class="size-8 rounded-full border-2 border-white dark:border-slate-900 bg-gray-200 overflow-hidden"
                   data-alt="Avatar user 1" style="
-                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPGBdkH9-C2RUragK67waEeP7LMV70uzQ24LPjOeRBJC3fqTQWdSdz_D6Ii4pg4NLyRDmSiEDVl0aE5YqKp9qtl16m8V2htp6mPpo2zUryYbEH3cpkdyGao_uJvZgc27JwetTtlRHx_oHZXvKEdYlhp3QA-muoKtB65OKVFLw5BdYN6QBpVWRzBcRxmIKUH-xlS_jJoiTCFSAp30UGZ6u_wFj5P0yolCDhACIZi4QXtLkAH0P9GFUTKdFEkQM0R0NqLpn1iINxpIc');
+                      background-image: url();
                     "></div>
                 <div class="size-8 rounded-full border-2 border-white dark:border-slate-900 bg-gray-300 overflow-hidden"
                   data-alt="Avatar user 2" style="
-                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMjSXUNaR7wdfEHLV-TmCPOkABam56Hpxylijq6bq4xbcL2yooWgYw8NsPik7xzrRJC8-StQ59C9SvsEoR5NklRMQJEE3B4cm2uu43Wf8ugC7QI3MfpZU2ZD18MwJg0aiRc4h_Zb1vPaZ2pO-j9usLXZKSoS0PGdpeZTPDZ6MWZ-zYbbIVqzfGRlaZLGUeugH3QVUdc0jk7_ewwal_D748w_aOzRQ5MOmz1FMtfO9DeqQkW_wsYuZxFaZwmV4Hnte6iIfZMKkkcn0');
+                      background-image: url();
                     "></div>
                 <div class="size-8 rounded-full border-2 border-white dark:border-slate-900 bg-gray-400 overflow-hidden"
                   data-alt="Avatar user 3" style="
-                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCY1M3I_-aY11OUAhazVKTtDX3EHjWdHKlUzl-Ody7hGhhj22ynVaRF-cYQUQcQ39qGvHlqWaS7rancRGITo1NTBEep0J0B6W66cb-1lZz32TAhPaM-T4Vx4Tl1D2bTVuY-RBwtwjLpS9b7spnYu3rz2wNcGWXO-nnpJFbXpawN02LFO4p_WnPnGfi66LN72Arc11L5cCptUgGhGWS9n0l44f70xzW9Sn7xgqRdIgFAk6T4TSSlVeSygwAUplzh7En5tXMWPkVH0Y');
+                      background-image: url();
                     "></div>
               </div>
               <p>Được tin dùng bởi các nhóm sáng tạo</p>
@@ -154,7 +150,7 @@
             <div
               class="relative w-full aspect-[4/3] bg-slate-100 dark:bg-slate-800 rounded-xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-700 bg-cover bg-center"
               data-alt="Digital whiteboard interface with sticky notes and drawings" style="
-                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBjsaTH6hK8f6LjpKQmJUJXglSIOHGlePh_X-5hUETUrd0QQyProv_3X-LW8GcaXXVhHZRuDiLFShPlyIyE5iBA5FkqEZ8LViAZFleEX5FRp6MgDheiz5vA62pnh8MoJ9cTeU-TnC75coH9J48i0bOFEIXOcKzxQZtk09UaFrQDpyYVkMh7rSgeL7TG-FEOqaGLI6Kpg_1RI9vR-cEF80tK7HQIAXFxu7uQf4Ez8FGp7ohMkyoG27K-Y3BDaxZIyY_dFCfqOJ2XQ8o');
+                  background-image: url(assets/images/index-top.png);
                 "></div>
           </div>
         </div>
@@ -274,9 +270,9 @@
                 Trải nghiệm thực tế
               </h2>
               <p class="text-slate-600 dark:text-slate-400 text-lg">
-                WebWhiteboard giúp nhóm chúng mình brainstorm ý tưởng
-                cho đồ án này như thế nào. Giao diện tối giản giúp tập trung
-                hoàn toàn vào nội dung.
+                WebWhiteboard giúp nhóm chúng mình brainstorm ý tưởng cho đồ
+                án này như thế nào. Giao diện tối giản giúp tập trung hoàn
+                toàn vào nội dung.
               </p>
             </div>
             <div class="space-y-4">
@@ -316,7 +312,7 @@
             <div
               class="relative w-full aspect-video bg-black rounded-xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-700">
               <div class="absolute inset-0 bg-cover bg-center" data-alt="Team brainstorming on a whiteboard" style="
-                    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-nHSa5rNFAz4ItRiNTUiVUUp_01IYBjvWTYjr6NXzFGbPsTHszTfSNmopjLW8-7UY4h0yfQDEhZeTN-dQDh3J88i1XsLWCDTpo_sRRg-N5H9L79io1tMBBKa0ntUhP_GSRyCUFYoRMMEuRjje7Xegt5MYk3HOPBOXWhdGDMDKK8JpEM3RytxVYQt1TuCkYG1KFkMx9h577a3ngcySw47fI0pFAA675_FmF0FaUV0pifOC9yE-X_EnWOOdwIGrHh04wtHNLVt3I54');
+                    background-image: url(assets/images/index-team.png);
                   "></div>
             </div>
           </div>

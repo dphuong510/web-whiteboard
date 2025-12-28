@@ -98,25 +98,22 @@
                 </div>
             </div>
         </header>
-<div
-  id="mobileMenu"
-  class="hidden md:hidden border-b border-[#e7e9f4] dark:border-gray-800 bg-[#f8f9fc] dark:bg-[#101322]"
->
-  <nav class="flex flex-col gap-4 px-6 py-6">
-    <a href="index.html" class="font-medium">Home</a>
-    <a href="about.html" class="font-medium">About</a>
-    <a href="product.html" class="font-medium">Product</a>
-    <a href="resource.html" class="font-medium">Resource</a>
+        <div id="mobileMenu" class="hidden md:hidden fixed top-[64px] left-0 right-0 bottom-0
+         z-40
+         bg-[#f8f9fc] dark:bg-[#101322]
+         overflow-y-auto border-t border-[#e7e9f4] dark:border-gray-800">
+            <nav class="flex flex-col gap-4 px-6 py-6">
+                <a href="index.html" class="font-medium">Home</a>
+                <a href="about.html" class="font-medium">About</a>
+                <a href="product.html" class="font-medium">Product</a>
+                <a href="resource.html" class="font-medium">Resource</a>
 
-    <a
-      href="https://webwhiteboard.com/"
-      target="_blank"
-      class="mt-4 inline-flex justify-center rounded-lg bg-primary px-6 py-3 text-white font-bold"
-    >
-      Thử công cụ gốc
-    </a>
-  </nav>
-</div>
+                <a href="https://webwhiteboard.com/" target="_blank"
+                    class="mt-4 inline-flex justify-center rounded-lg bg-primary px-6 py-3 text-white font-bold">
+                    Thử công cụ gốc
+                </a>
+            </nav>
+        </div>
         <main class="flex-1">
 
             <section class="relative w-full py-12 md:py-24 px-6">
@@ -139,7 +136,7 @@
                             </div>
                             <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-2xl bg-white dark:bg-slate-800"
                                 data-alt="Hình ảnh minh họa giao diện Whiteboard với các ghi chú và hình vẽ"
-                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7mwrxOzNBBr7BXHNCqdEvyX_YEs9TCPVnhdlQawmRgNGka-rbBDpXLcnZ9ngbYK_Vii5AfNvuKlORLVanrKyRL85Y1vUG2dj7wEvUOATmOWEhMtIyJ_maU0y_RMrZJ8oW0BaVioY845Am8tYtZoKWNXVXNkT6LZqHyvudIBDYI0CeXQITSQny_2ST7VtST-8hCIKzOZlA9VuCgxPAA_EAPqYmVnZSBg7BqN3x5covUlCYA99DzcHd5rconrk662BqqoZgK7jizLg'); background-size: cover; background-position: center;">
+                                style="background-image: url(assets/images/product-top.png); background-size: cover; background-position: center;">
                                 <div
                                     class="absolute inset-0 bg-slate-900/5 dark:bg-slate-900/40 flex items-center justify-center group cursor-pointer">
                                     <span class="sr-only">Xem trước tương tác</span>
@@ -203,15 +200,15 @@
                                     <span class="material-symbols-outlined">video_library</span>
                                 </div>
                                 <h2 class="text-2xl font-bold text-text-primary-light dark:text-text-primary-dark">
-                                    Cách thức hoạt động
+                                    Video hướng dẫn
                                 </h2>
 
                             </div>
                             <p class="text-text-secondary-light dark:text-gray-300 leading-relaxed">
                                 Làm quen với Whiteboard
                                 chỉ trong vài phút. Video hướng dẫn này sẽ giúp bạn nắm bắt công cụ cơ bản.</p>
-                            <video class="w-full object-cover pt-4" src="assets/video.mp4" poster="assets/video-image.png" controls
-                                preload="metadata"></video>
+                            <video class="w-full object-cover pt-4" src="assets/video.mp4"
+                                poster="assets/video-image.png" controls preload="metadata"></video>
                         </div>
 
 
@@ -655,12 +652,12 @@
             document.getElementById("successModal").classList.remove("flex");
         }
     </script>
-     <script>
-    function toggleMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.classList.toggle("hidden");
-    }
-  </script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
 </body>
 <!-- SUCCESS POPUP -->
 <div id="successModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50">
